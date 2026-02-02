@@ -1,0 +1,56 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # - name: Ensure only Ahmed Elsayed can deploy
+      #   if: ${{ github.actor != 'ahmedelsayed1996' }}
+      #   run: |
+      #     echo "❌ Unauthorized user: ${{ github.actor }}"
+      #     exit 1
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build application
+        run: npm run build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_IP }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            cd ./eduxa/frontend
+
+            git pull origin main
+
+            npm install --lockfile
+
+            rm -rf ./next
+
+            npm run build
+
+            pm2 restart eduxa-frontend --silent
+
+            echo "Deployment successful"
