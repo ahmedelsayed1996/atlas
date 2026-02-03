@@ -14,6 +14,9 @@ const config: Config = {
         primary: "#E68514",
         secondColor: "#195658",
       },
+      backgroundImage: {
+        'about-bg': "url('/images/bg-about.png')",
+      },
     },
   },
   plugins: [],
