@@ -18,7 +18,7 @@ import SwiperSliderINS from "../_components/SwiperSliderINS";
 import Image from "next/image";
 
 function NewHome() {
-  const imageUrl: string[] = ["/images/hero.png", "/images/hero2.png", "/images/hero3.png", "/images/hero2.png"];
+  const imageUrl: string[] = ["/images/hero.png", "/images/hero2.png", "/images/hero3.png"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ function NewHome() {
   }, [imageUrl.length]);
 
   return (
-    <div className="flex overflow-hidden flex-col bg-white">
+    <div className="flex overflow-hidden flex-col bg-white pt-[56px]">
       <div className="flex relative flex-col pb-4 pl-20 w-full  max-md:pl-5 max-md:max-w-full">
         {imageUrl.map((url, index) => (
           <div
@@ -52,7 +52,196 @@ function NewHome() {
           ))}
         </div>
 
-        
+        <div className="flex relative z-50 flex-col w-full max-md:max-w-full -mt-[55px]">
+          {/* navbar */}
+          <div className="flex flex-wrap gap-10 justify-between items-center py-2 pr-1.5 pl-16 w-full bg-neutral-100 max-md:pl-5 max-md:max-w-full">
+            <div className="flex flex-wrap gap-4 items-center self-stretch my-auto text-xs text-teal-600 min-w-60 max-md:max-w-full">
+              <img
+                alt=""
+                loading="lazy"
+                srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/6f0b13219d91957f84fd38fcd7d792ec39032540?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/6f0b13219d91957f84fd38fcd7d792ec39032540?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/6f0b13219d91957f84fd38fcd7d792ec39032540?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/6f0b13219d91957f84fd38fcd7d792ec39032540?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/6f0b13219d91957f84fd38fcd7d792ec39032540?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/6f0b13219d91957f84fd38fcd7d792ec39032540?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/6f0b13219d91957f84fd38fcd7d792ec39032540?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/6f0b13219d91957f84fd38fcd7d792ec39032540?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-[2.48] w-[89px]"
+              />
+              <div className="flex gap-2 items-end self-stretch my-auto">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/43eb6da6d8cc995bb386295d202f9b583c14bc54?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain shrink-0 w-4 aspect-square"
+                />
+                <div className="flex gap-1 items-center min-h-[13px]">
+                  <div className="self-stretch my-auto">
+                    Sahaba Road, Jeddah, KSA
+                  </div>
+                </div>
+              </div>
+              <div className="flex gap-2 items-end self-stretch my-auto whitespace-nowrap">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ef7be604af87aa1c346577df1f50dc5cc255836c?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain shrink-0 w-4 aspect-square"
+                />
+                <div className="flex flex-col min-h-[13px] w-[67px]">
+                  <div>0554140020</div>
+                </div>
+              </div>
+              <div className="flex gap-2 items-end self-stretch my-auto whitespace-nowrap">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/b368e282deacf950385e9a969a17d41e1db4cac6?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain shrink-0 w-4 aspect-square"
+                />
+                <div className="w-[100px]">Info@atlasmed.net</div>
+              </div>
+              <div className="flex gap-2 items-end self-stretch my-auto font-medium">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/12acae4db24af4b854abad24bfd318098ac03d8d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain shrink-0 w-4 aspect-square"
+                />
+                <div className="w-[125px]">
+                  <span className="">Open </span>
+                  <span className="font-bold">24/7 </span>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-5 items-center self-stretch my-auto h-[23px] min-w-60">
+              <div className="flex gap-2 self-stretch px-2 my-auto min-h-6 rounded-[44px]">
+                <div className="my-auto text-sm font-medium leading-loose text-teal-800">
+                  English
+                </div>
+                <div className="flex flex-col justify-center items-start w-2.5">
+                  <img
+                    alt=""
+                    loading="lazy"
+                    src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/94fcff1014400c6adb1b7264dd9b078b83bd6b89?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                    className="object-contain w-2 aspect-[1.6] fill-teal-800 stroke-[0.5px] stroke-teal-800"
+                  />
+                </div>
+              </div>
+              <div className="flex gap-2.5 items-start self-stretch my-auto">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/6adb01331620b04a3e9ec997e092d55b43abee71?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain shrink-0 w-6 aspect-square"
+                />
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/adfc17ed0ff387b71143047786d3c3d26a957097?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain shrink-0 w-6 aspect-square"
+                />
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/3472343d15d9e0a71c76e4f2b7f83223c1a8bf09?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain shrink-0 w-6 aspect-square"
+                />
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/51cc029cb4c71b1fe738efe5dc6467c0e06ec85a?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain shrink-0 w-6 aspect-square"
+                />
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/a707c58c7afb09f31f2797fab66fac4dce29493f?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain shrink-0 w-6 aspect-square"
+                />
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/13c9e01448ffa17ee8e3eeaf2c8b7e6b0b705758?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain shrink-0 w-6 aspect-square"
+                />
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/435a557080c0a49a2e6e1aa8a1c5341cde6f4df5?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain shrink-0 w-6 aspect-square"
+                />
+              </div>
+            </div>
+          </div>
+          {/* header */}
+          <div className="flex mx-auto gap-10 items-center  p-3 mt-5 max-w-full bg-emerald-50 bg-opacity-70 rounded-[50px] shadow-[2px_4px_24px_rgba(42,147,150,0.16)]">
+            <div className="flex gap-8 items-center self-stretch my-auto min-w-60 max-md:max-w-full">
+              <div className="flex flex-wrap gap-2 items-center self-stretch my-auto min-w-60 max-md:max-w-full">
+                <div className="flex gap-1.5 justify-center items-center self-stretch px-3 py-2 my-auto text-sm text-right text-teal-800 whitespace-nowrap rounded-[30px]">
+                  <div className="self-stretch my-auto">Home</div>
+                </div>
+                <div className="flex gap-3 justify-center items-end self-stretch px-3 py-2 my-auto rounded-[30px]">
+                  <div className="text-sm text-right text-teal-800">
+                    Departments
+                  </div>
+                  <div className="flex flex-col items-start w-2.5 min-h-[13px]">
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/94fcff1014400c6adb1b7264dd9b078b83bd6b89?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                      className="object-contain w-2 aspect-[1.6] fill-teal-800 stroke-[0.5px] stroke-teal-800"
+                    />
+                  </div>
+                </div>
+                <div className="flex gap-3 justify-center items-end self-stretch px-3 py-2 my-auto text-sm text-right text-teal-800 whitespace-nowrap rounded-[30px]">
+                  <div>Doctors</div>
+                </div>
+                <div className="flex gap-3 justify-center self-stretch px-3 py-2 my-auto rounded-[30px]">
+                  <div className="self-end text-sm text-right text-teal-800">
+                    Services
+                  </div>
+                  <div className="flex flex-col justify-center items-start w-2.5">
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/94fcff1014400c6adb1b7264dd9b078b83bd6b89?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                      className="object-contain w-2 aspect-[1.6] fill-teal-800 stroke-[0.5px] stroke-teal-800"
+                    />
+                  </div>
+                </div>
+                <div className="flex gap-3 justify-center items-end self-stretch px-3 py-2 my-auto text-sm text-right text-teal-800 whitespace-nowrap rounded-[30px]">
+                  <div>Offers</div>
+                </div>
+                <div className="flex gap-3 justify-center items-end self-stretch px-3 py-2 my-auto text-sm text-right text-teal-800 rounded-[30px]">
+                  <div>About Us</div>
+                </div>
+                <div className="flex gap-3 justify-center items-end self-stretch px-3 py-2 my-auto text-sm text-right text-teal-800 whitespace-nowrap rounded-[30px]">
+                  <div>Blogs</div>
+                </div>
+                <div className="flex gap-3 justify-center items-end self-stretch px-3 py-2 my-auto text-sm text-right text-teal-800 rounded-[30px]">
+                  <div>Contact Us</div>
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-6 items-center self-stretch my-auto min-w-60">
+              <div className="flex gap-2.5 justify-center items-center self-stretch py-1.5 my-auto rounded-[56px] w-[34px]">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/4beb6bd5a5eb6aafb679385252b1a8d2345c93db?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain self-stretch my-auto w-6 aspect-square"
+                />
+              </div>
+              <div className="flex gap-3 items-center self-stretch my-auto text-xs text-right text-white min-w-60">
+                <div className="flex gap-2.5 justify-center items-center self-stretch px-4 my-auto font-medium bg-teal-800 min-h-[34px] rounded-[60px]">
+                  <div className="self-stretch my-auto">
+                    Book an Appointment
+                  </div>
+                </div>
+                <div className="flex gap-2.5 justify-center items-center self-stretch px-4 my-auto font-semibold bg-amber-600 min-h-[34px] rounded-[60px]">
+                  <div className="self-stretch my-auto">
+                    Request a Home Visit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* start hero section */}
         <div className="flex relative z-50 flex-col mt-12 max-w-full w-[726px] max-md:mt-10">
           <div className="flex flex-col w-full max-md:max-w-full">
@@ -75,17 +264,1394 @@ function NewHome() {
           </div>
         </div>
         <div className="flex relative z-50 gap-4 items-center self-start mt-11 text-base font-semibold text-white leading-[58px] max-md:mt-10 max-md:max-w-full">
-          <div className="flex gap-2.5 justify-center items-center self-stretch px-6 my-auto bg-secondColor rounded-[60px] max-md:px-5">
+          <div className="flex gap-2.5 justify-center items-center px-6 border-2 border-secondColor hover:bg-transparent bg-secondColor rounded-[60px] cursor-pointer transition-all duration-300">
             <div className="self-stretch my-auto">Book an Appointment</div>
           </div>
-          <div className="flex gap-2.5 justify-center items-center self-stretch px-6 my-auto bg-primary rounded-[60px] max-md:px-5">
+          <div className="flex gap-2.5 justify-center items-center self-stretch px-6 my-auto border-2 border-primary hover:bg-transparent bg-primary rounded-[60px] cursor-pointer transition-all duration-300">
             <div className="self-stretch my-auto">Request a Home Visit</div>
           </div>
         </div>
         {/* End hero section */}
 
       </div>
-      
+      {/* Departments Section */}
+      <div className="flex overflow-hidden relative flex-col py-16 mt-16 w-full min-h-[512px] max-md:mt-10 max-md:max-w-full">
+        <Image src={"/images/department.png"} alt={`department image`} fill className="object-cover" />
+        <div className="relative self-center text-5xl font-semibold tracking-wide leading-none text-center text-zinc-100 max-md:max-w-full">
+          Departments & Specialties
+        </div>
+        <div className="flex relative flex-col mt-8 w-full max-md:max-w-full">
+          <div className="flex flex-wrap gap-px justify-center items-center px-16 w-full max-md:px-5 max-md:max-w-full">
+            <div className="group flex overflow-hidden flex-col flex-1 self-stretch px-4 py-5 text-white bg-teal-800 hover:text-secondColor hover:bg-emerald-50 bg-opacity-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col justify-center items-center self-center py-0.5 w-12 min-h-12">
+                <svg width="48" height="44" viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M47.9946 36.8308C47.9946 37.2456 47.6595 37.5807 47.2447 37.5807C46.7713 37.5807 46.2417 37.7846 45.5762 38.0424C44.5403 38.4431 43.2514 38.9399 41.4329 38.9399C39.6261 38.9399 38.3395 38.4431 37.3037 38.0447C36.6311 37.7846 36.0991 37.5807 35.6187 37.5807C35.1453 37.5807 34.6157 37.7846 33.9502 38.0424C32.9143 38.4431 31.6254 38.9399 29.8069 38.9399C28.0001 38.9399 26.7136 38.4431 25.6777 38.0447C25.0051 37.7846 24.4732 37.5807 23.9927 37.5807C23.5194 37.5807 22.9897 37.7846 22.3218 38.0424C21.2883 38.4431 20.0018 38.9399 18.1903 38.9399C16.3788 38.9399 15.0828 38.4431 14.047 38.0424C13.3791 37.7846 12.8518 37.5807 12.3785 37.5807C11.8981 37.5807 11.3661 37.7869 10.6935 38.0447C9.65999 38.4431 8.37344 38.9399 6.56428 38.9399C4.74577 38.9399 3.45681 38.4431 2.42103 38.0424C1.75312 37.7846 1.22584 37.5807 0.752496 37.5807C0.337696 37.5807 0.00257978 37.2456 0.00257978 36.8308C0.00257978 36.416 0.337696 36.0809 0.752496 36.0809C1.50709 36.0809 2.21483 36.355 2.96241 36.6433C3.93028 37.0159 5.02702 37.4401 6.56668 37.4401C8.09465 37.4401 9.18905 37.0182 10.1546 36.6456C10.9092 36.355 11.6193 36.0809 12.3809 36.0809C13.1355 36.0809 13.8432 36.355 14.5908 36.6433C15.5587 37.0159 16.6554 37.4401 18.1927 37.4401C19.723 37.4401 20.8174 37.0182 21.783 36.6433C22.5329 36.3527 23.2406 36.0785 23.9952 36.0785C24.7568 36.0785 25.4669 36.3527 26.2215 36.6433C27.187 37.0159 28.2814 37.4377 29.8094 37.4377C31.3491 37.4377 32.4458 37.0136 33.4113 36.641C34.1589 36.3527 34.869 36.0785 35.6212 36.0785C36.3829 36.0785 37.0929 36.3527 37.8475 36.6433C38.8131 37.0159 39.9075 37.4377 41.4354 37.4377C42.9751 37.4377 44.0718 37.0136 45.0397 36.641C45.7873 36.3527 46.4974 36.0785 47.2496 36.0785C47.6644 36.0785 47.9995 36.4136 47.9995 36.8284L47.9946 36.8308ZM47.2447 42.5067H0.749916C0.335116 42.5067 0 42.8418 0 43.2566C0 43.6714 0.335116 44.0065 0.749916 44.0065H47.2447C47.6595 44.0065 47.9946 43.6714 47.9946 43.2566C47.9946 42.8418 47.6595 42.5067 47.2447 42.5067ZM47.9946 21.8678C47.9946 22.2826 47.6595 22.6177 47.2447 22.6177H26.9316C27.1636 24.4925 27.5338 25.2471 28.033 26.2736C28.2345 26.6837 28.4618 27.1477 28.7032 27.7289V27.7313C28.954 28.3382 29.0829 28.9897 29.0829 29.6647C29.0829 32.4698 26.8003 34.75 23.9928 34.75C21.1853 34.75 18.9121 32.4698 18.9121 29.6647C18.9121 28.7718 19.1464 27.8953 19.5894 27.1313C20.6533 25.2893 20.8924 24.5581 21.0002 22.6178L0.750042 22.6201C0.335242 22.6201 0.000125871 22.285 0.000125871 21.8702C0.000125871 21.4554 0.335242 21.1203 0.750042 21.1203H21.059C21.0988 19.9087 21.148 18.4979 21.2746 16.9794H0.75027C0.33547 16.9794 0.000354155 16.6443 0.000354155 16.2295C0.000354155 15.8147 0.33547 15.4796 0.75027 15.4796H7.97526C8.55644 13.1548 9.39074 11.123 10.4593 9.43823C11.8725 7.21194 13.7403 5.50351 16.0134 4.35752C16.3345 4.19582 16.7235 4.28487 16.9438 4.56843C17.1641 4.852 17.1523 5.25272 16.9156 5.52221C14.5839 8.18909 13.4965 12.2594 12.9879 15.4823H21.4224C22.0762 9.82744 23.9862 3.22086 30.1988 0.0808172C30.5199 -0.0808826 30.9089 0.00582571 31.1292 0.28939C31.3495 0.572954 31.3378 0.971334 31.1034 1.24316C28.3404 4.41393 27.0211 10.0196 26.7304 15.482H36.369C36.9501 13.1572 37.7821 11.1278 38.853 9.44064C40.2638 7.21435 42.1292 5.50592 44.3954 4.35993C44.7141 4.19823 45.1055 4.28494 45.3258 4.5685C45.5461 4.85207 45.5343 5.25045 45.3 5.52228C42.9823 8.18682 41.8902 12.2577 41.3746 15.4824H47.2474C47.6622 15.4824 47.9974 15.8175 47.9974 16.2323C47.9974 16.6471 47.6622 16.9822 47.2474 16.9822H26.6763C26.6482 18.4047 26.6881 19.7991 26.7912 21.1231H47.2501C47.6649 21.1231 48 21.4582 48 21.873L47.9946 21.8678ZM37.9151 15.4797H39.8532C40.2118 13.1409 40.8656 10.3311 42.0561 7.83058C40.1462 9.67724 38.7799 12.2106 37.9151 15.4797ZM9.52633 15.4797H11.4738C11.8276 13.1409 12.4768 10.3358 13.6696 7.83298C11.7574 9.67964 10.3911 12.213 9.52633 15.4797ZM27.3179 28.3057C27.093 27.7667 26.8867 27.3425 26.6852 26.9324C26.1134 25.763 25.6611 24.842 25.4033 22.4797C25.0049 18.8028 25.1127 14.5894 25.6986 10.9214C26.1509 8.09521 26.8773 5.61815 27.8429 3.58186C22.9661 8.36962 22.7013 16.6142 22.5489 21.3735L22.5466 21.4695C22.4435 24.5559 22.2888 25.4464 20.8851 27.8816C20.5734 28.4183 20.4094 29.0346 20.4094 29.6627C20.4094 31.6406 22.0147 33.2483 23.9902 33.2483C25.9635 33.2483 27.5805 31.6406 27.5805 29.6627C27.5805 29.1846 27.4914 28.7253 27.3157 28.3012L27.3179 28.3057ZM42.1357 27.4433C42.1357 28.6806 41.128 29.686 39.8906 29.686C38.6532 29.686 37.6455 28.6806 37.6455 27.4433C37.6455 26.2059 38.6532 25.1889 39.8906 25.1889C41.128 25.1889 42.1357 26.1989 42.1357 27.4433ZM40.6358 27.4433C40.6358 27.0285 40.3007 26.6887 39.8906 26.6887C39.4805 26.6887 39.1454 27.0261 39.1454 27.4433C39.1454 27.8534 39.4805 28.1862 39.8906 28.1862C40.3007 28.1862 40.6358 27.8534 40.6358 27.4433ZM5.84694 27.4433C5.84694 26.2012 6.85933 25.1889 8.10371 25.1889C9.34809 25.1889 10.3488 26.1989 10.3488 27.4433C10.3488 28.6853 9.34107 29.686 8.10371 29.686C6.86635 29.686 5.84694 28.6806 5.84694 27.4433ZM7.34678 27.4433C7.34678 27.8534 7.68658 28.1862 8.10371 28.1862C8.51382 28.1862 8.84895 27.8534 8.84895 27.4433C8.84895 27.0285 8.51383 26.6887 8.10371 26.6887C7.68657 26.6887 7.34678 27.0261 7.34678 27.4433ZM15.9522 30.0539C17.1896 30.0539 18.1973 31.064 18.1973 32.3084C18.1973 33.5504 17.1896 34.5511 15.9522 34.5511C14.7148 34.5511 13.6954 33.5457 13.6954 32.3084C13.6954 31.071 14.7078 30.0539 15.9522 30.0539ZM15.1976 32.3084C15.1976 32.7185 15.5374 33.0513 15.9545 33.0513C16.3576 33.0513 16.6998 32.7115 16.6998 32.3084C16.6998 31.8936 16.3647 31.5538 15.9545 31.5538C15.5374 31.5538 15.1976 31.8912 15.1976 32.3084ZM32.0425 30.0539C33.2869 30.0539 34.2993 31.064 34.2993 32.3084C34.2993 33.5504 33.2869 34.5511 32.0425 34.5511C30.7981 34.5511 29.7975 33.5457 29.7975 32.3084C29.7975 31.071 30.8052 30.0539 32.0425 30.0539ZM31.2973 32.3084C31.2973 32.7185 31.6324 33.0513 32.0425 33.0513C32.4597 33.0513 32.7995 32.7185 32.7995 32.3084C32.7995 31.8936 32.4596 31.5538 32.0425 31.5538C31.6324 31.5538 31.2973 31.8912 31.2973 32.3084ZM5.23561 33.7801C5.23561 34.1996 5.56839 34.5323 5.97851 34.5323C6.39799 34.5323 6.73076 34.1996 6.73076 33.7801C6.73076 33.37 6.39799 33.0395 5.97851 33.0395C5.5684 33.0395 5.23561 33.3723 5.23561 33.7801ZM41.2646 33.7801C41.2646 34.1996 41.5973 34.5323 42.0168 34.5323C42.4269 34.5323 42.7597 34.1996 42.7597 33.7801C42.7597 33.37 42.4269 33.0395 42.0168 33.0395C41.5973 33.0395 41.2646 33.3723 41.2646 33.7801ZM33.1493 25.5406C33.1493 25.1211 32.8165 24.7883 32.4064 24.7883C31.9869 24.7883 31.6541 25.1211 31.6541 25.5406C31.6541 25.9507 31.9869 26.2812 32.4064 26.2812C32.8165 26.2812 33.1493 25.9484 33.1493 25.5406ZM16.3416 25.5406C16.3416 25.1211 16.0088 24.7883 15.5893 24.7883C15.1792 24.7883 14.8464 25.1211 14.8464 25.5406C14.8464 25.9507 15.1792 26.2812 15.5893 26.2812C16.0088 26.2812 16.3416 25.9484 16.3416 25.5406Z" fill="currentColor" />
+                </svg>
+              </div>
+              <div className="mt-4 text-base font-medium text-center">
+                Dermatology & Cosmetic Clinic
+              </div>
+            </div>
+            <div className="group flex overflow-hidden flex-col flex-1 self-stretch px-4 py-5 text-white bg-teal-800 hover:text-secondColor hover:bg-emerald-50 bg-opacity-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col justify-center items-center self-center py-0.5 w-12 min-h-12">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 12C19 13 21.0067 12.8246 24 10.3526M24 10.3526C23.5573 9.98703 23.0972 9.57165 22.6219 9.10063C18.0106 4.5312 11.7304 5.42584 8.78799 9.10063C6.75568 11.6388 1.55504 17.9571 14.2843 40.4791C14.8113 41.4116 15.8612 42 16.992 42C18.796 42 20.2059 40.5602 20.2646 38.8798C20.389 35.3159 21.0795 31.207 24 31.207C26.9205 31.207 27.611 35.3159 27.7354 38.8798C27.7941 40.5602 29.204 42 31.008 42C32.1388 42 33.1887 41.4116 33.7157 40.4791C46.445 17.9571 41.2443 11.6388 39.212 9.10063C36.2696 5.42584 29.9894 4.5312 25.3781 9.10063C24.9028 9.57165 24.4427 9.98703 24 10.3526Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </div>
+              <div className="mt-4 text-base font-medium text-center">
+                Dental Clinic
+              </div>
+            </div>
+            <div className="group flex overflow-hidden flex-col flex-1 self-stretch px-4 py-5 text-white bg-teal-800 hover:text-secondColor hover:bg-emerald-50 bg-opacity-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col justify-center items-center self-center py-0.5 w-12 min-h-12">
+                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2195 26.4085C15.9918 25.6362 16.9597 25.1788 17.9638 25.0362M17.9638 25.0362C19.4224 24.8291 20.9573 25.2865 22.0793 26.4085C23.9736 28.3028 23.9736 31.374 22.0793 33.2683C20.574 34.7736 18.3254 35.0827 16.5149 34.1956C15.7214 33.8068 14.713 33.7748 14.0882 34.3997L6.98781 41.5M17.9638 25.0362C17.9638 25.036 17.9637 25.0364 17.9638 25.0362ZM17.9638 25.0362C18.1709 23.5776 17.7135 22.0427 16.5915 20.9207C14.6972 19.0264 11.626 19.0264 9.73172 20.9207C8.22641 22.426 7.91731 24.6746 8.80444 26.4851C9.19325 27.2786 9.22519 28.287 8.60035 28.9118L1.5 36.0122" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M27.7805 16.5915C27.0082 17.3638 26.0403 17.8212 25.0362 17.9638M25.0362 17.9638C23.5776 18.1709 22.0427 17.7135 20.9207 16.5915C19.0264 14.6972 19.0264 11.626 20.9207 9.73172C22.426 8.22641 24.6746 7.91732 26.4851 8.80444C27.2786 9.19325 28.287 9.22519 28.9118 8.60035L36.0122 1.5M25.0362 17.9638C24.8291 19.4224 25.2865 20.9573 26.4085 22.0793C28.3028 23.9736 31.374 23.9736 33.2683 22.0793C34.7736 20.574 35.0827 18.3254 34.1956 16.5149C33.8068 15.7214 33.7748 14.713 34.3997 14.0882L41.5 6.98781" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M29.5 33.5V37.5M33.5 29.5H37.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M13.5 9.5V5.5M9.5 13.5H5.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </div>
+              <div className="mt-4 text-base font-medium text-center">
+                Orthopedic Clinic
+              </div>
+            </div>
+            <div className="group flex overflow-hidden flex-col flex-1 self-stretch px-4 py-5 text-white bg-teal-800 hover:text-secondColor hover:bg-emerald-50 bg-opacity-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col justify-center items-center self-center py-0.5 w-12 min-h-12">
+                <svg width="50" height="49" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M48.1835 21.012H30.2608C28.9733 21.012 27.7815 21.6022 26.9882 22.634C26.2051 23.6514 25.9347 24.9515 26.2438 26.2001C26.5794 27.558 26.8885 28.9386 27.1631 30.3047C27.7285 33.035 28.1861 35.9591 28.5339 39.0835C28.658 40.526 28.056 41.8488 26.8824 42.7135C26.2824 43.1572 25.5034 43.413 24.6004 43.4337C22.5909 43.4337 20.915 41.9066 20.6973 39.88C20.677 39.7088 20.6688 39.5168 20.6688 39.3559C20.7563 36.0437 20.6485 32.6739 20.3515 29.3388C20.2173 27.7662 20.0363 26.171 19.8105 24.5964C19.5197 22.5554 17.7563 21.016 15.7142 21.016L1.01705 21.0118C0.793316 21.0118 0.600098 21.2079 0.600098 21.4349V47.8272C0.600098 48.0542 0.793316 48.2503 1.01705 48.2503H48.1811C48.4048 48.2503 48.5981 48.0542 48.5981 47.8272L48.6001 21.437C48.6001 21.2079 48.4073 21.012 48.1835 21.012ZM27.0331 25.9978C26.7849 24.999 27.0046 23.9569 27.631 23.1396C28.2677 22.3121 29.2256 21.8375 30.2609 21.8375H47.7869V28.2061C46.3591 28.3857 45.4723 28.8562 44.6201 29.3143C43.5869 29.8715 42.6086 30.3978 40.6113 30.3978C38.6059 30.3978 37.6276 29.8716 36.5944 29.3123C35.5185 28.7324 34.4039 28.1319 32.2052 28.1319C30.0045 28.1319 28.8879 28.7324 27.808 29.3123C27.7978 29.3185 27.7896 29.3226 27.7795 29.3267C27.5456 28.2185 27.3056 27.1019 27.0331 25.9978ZM15.7146 21.8375C17.3559 21.8375 18.7715 23.0736 19.0075 24.7122C19.1844 25.9483 19.3268 27.1989 19.4468 28.4412C18.7471 28.2534 17.9966 28.1647 17.1281 28.1647C14.9234 28.1647 13.8048 28.7467 12.7248 29.308C11.6793 29.8507 10.6929 30.3666 8.66712 30.3666C6.65152 30.3666 5.6651 29.8549 4.62171 29.3142C3.76545 28.8705 2.87457 28.4144 1.41631 28.2411V21.8397L15.7146 21.8375ZM1.41415 47.4273V29.081C2.64873 29.244 3.44193 29.63 4.2494 30.0468C5.33345 30.6102 6.45416 31.1901 8.66501 31.1901C10.886 31.1901 12.0088 30.606 13.0948 30.0427C14.1342 29.502 15.1186 28.9902 17.126 28.9902C18.0494 28.9902 18.8203 29.1037 19.5321 29.3307C19.5342 29.3575 19.5382 29.3843 19.5403 29.4091C19.8352 32.7151 19.9389 36.0541 19.8535 39.3438C19.8535 39.546 19.8657 39.7751 19.8881 39.9712C20.1504 42.4166 22.1742 44.2574 24.5986 44.2574C24.6027 44.2574 24.7064 44.2554 24.7084 44.2554C25.6827 44.2306 26.6264 43.919 27.3586 43.3783C28.7477 42.3526 29.488 40.7223 29.3416 39.0095C29.3396 39.0054 29.3294 38.9022 29.3294 38.898C28.9918 35.8459 28.5301 32.9029 27.9606 30.1563C28.0338 30.1171 28.1091 30.0778 28.1823 30.0386C29.2196 29.4814 30.1999 28.9552 32.1992 28.9552C34.1965 28.9552 35.1707 29.4814 36.206 30.0386C37.284 30.6206 38.3985 31.2211 40.6073 31.2211C42.806 31.2211 43.9206 30.6206 44.9985 30.0407C45.7938 29.6114 46.5789 29.2173 47.783 29.0481V47.425H1.41398L1.41415 47.4273Z" fill="currentColor" stroke="currentColor" stroke-width="1.2" />
+                  <path d="M17.2669 10.1632C18.3449 13.3371 19.2052 16.5625 19.8215 19.7508C21.0866 26.1707 21.6459 32.7686 21.4832 39.3576V39.3617C21.4811 39.4979 21.4872 39.6506 21.5015 39.7868C21.6154 40.8372 22.2357 41.7577 23.1591 42.2488C23.6127 42.4903 24.1028 42.61 24.5991 42.61C25.136 42.61 25.6811 42.4696 26.1916 42.189C27.2411 41.6153 27.8513 40.3647 27.711 39.0811C26.9503 32.135 25.4411 25.3162 23.2262 18.8139C22.1442 15.6111 20.812 12.4125 19.2642 9.3087C17.9503 6.65278 16.4126 3.92057 14.2831 0.445406C14.1713 0.261737 13.9353 0.195699 13.7483 0.298887C13.5591 0.400009 13.4798 0.633201 13.5672 0.831308C15.1923 4.52117 16.3313 7.40016 17.2669 10.1632ZM18.5401 9.68027C20.0717 12.7531 21.3896 15.9147 22.4574 19.0824C24.652 25.5272 26.1489 32.2857 26.9035 39.17C27.0073 40.1234 26.5659 41.0438 25.8052 41.4607C25.0628 41.8693 24.2371 41.8878 23.5374 41.5164C22.854 41.1552 22.3943 40.4721 22.3109 39.6962C22.3008 39.593 22.2967 39.4795 22.2987 39.3764C22.4614 32.7272 21.8981 26.0695 20.6207 19.5899C19.9963 16.3644 19.1279 13.1019 18.0377 9.89297C17.6208 8.66097 17.1652 7.40832 16.6445 6.07309C17.3401 7.32986 17.9625 8.51225 18.5401 9.68027Z" fill="currentColor" stroke="currentColor" stroke-width="0.5" />
+                </svg>
+              </div>
+              <div className="mt-4 text-base font-medium text-center">
+                General Surgery Clinic
+              </div>
+            </div>
+            <div className="group flex overflow-hidden flex-col flex-1 self-stretch px-4 py-5 text-white bg-teal-800 hover:text-secondColor hover:bg-emerald-50 bg-opacity-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col justify-center items-center self-center py-0.5 w-12 min-h-12">
+                <svg width="43" height="39" viewBox="0 0 43 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.4554 17.5C14.2775 17.9126 14.93 18.623 15.4479 19.4908M15.4479 19.4908C17.4407 22.8301 17.4405 28.5 17.4405 28.5C17.4405 35.5 13.8721 37.5 9.47025 37.5C7.47769 37.5 1.5 36.5 1.5 27.5C1.5 14.5 8.47396 5.5 14.4517 5.5C19.2338 5.5 17.4435 15.5 15.4479 19.4908Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M29.5421 17.5C28.7199 17.9126 28.0673 18.623 27.5493 19.4908M27.5493 19.4908C25.5563 22.8301 25.5565 28.5 25.5565 28.5C25.5565 35.5 29.1254 37.5 33.5278 37.5C35.5206 37.5 41.499 36.5 41.499 27.5C41.499 14.5 34.5242 5.5 28.5457 5.5C23.763 5.5 25.5593 15.5 27.5493 19.4908Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M25.499 9.5L21.499 6.83333M21.499 6.83333L17.499 9.5M21.499 6.83333V1.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div className="mt-4 text-base font-medium text-center">
+                Chest Clinic
+              </div>
+            </div>
+            <div className="group flex overflow-hidden flex-col flex-1 self-stretch px-4 py-5 text-white bg-teal-800 hover:text-secondColor hover:bg-emerald-50 bg-opacity-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col justify-center items-center self-center py-0.5 w-12 min-h-12">
+                <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M23.092 10.6009C26.0151 10.6009 28.3924 8.22359 28.3924 5.30046C28.3924 2.37734 26.0151 0 23.092 0C20.1688 0 17.7915 2.37734 17.7915 5.30046C17.7915 8.22359 20.1688 10.6009 23.092 10.6009ZM23.092 1.84145C24.9991 1.84145 26.551 3.39338 26.551 5.30046C26.551 7.20755 24.9991 8.75948 23.092 8.75948C21.1849 8.75948 19.633 7.20755 19.633 5.30046C19.633 3.39338 21.1849 1.84145 23.092 1.84145Z" fill="currentColor" />
+                  <path d="M43.6796 23.2878H31.2129V16.8059C31.2129 13.8918 28.8419 11.5216 25.9278 11.5216H25.6418C24.5197 11.5216 23.4506 11.8696 22.5704 12.5116C22.2118 12.7579 21.8905 13.0568 21.5873 13.4172L12.3956 22.0012C12.0181 22.3547 11.7649 22.8031 11.6247 23.2878H2.50412C1.12303 23.2878 0 24.4118 0 25.7928C0 27.1739 1.12303 28.297 2.50412 28.297H3.83576V47.0783C3.83576 47.5872 4.24756 47.9991 4.75648 47.9991H7.88461C8.39353 47.9991 8.80534 47.5872 8.80534 47.0783V28.297H19.2942L14.6525 31.399C14.4232 31.5519 14.2748 31.8 14.2479 32.0743L13.0331 44.451C12.9468 45.3592 13.2489 46.2664 13.8612 46.9399C14.4736 47.6133 15.3484 48 16.2602 48C17.001 48 17.7312 47.7365 18.3156 47.2591C18.9036 46.778 19.3029 46.1073 19.4386 45.3744L21.2963 35.6223L24.4235 34.068V44.7648C24.4235 46.5478 25.8747 47.9991 27.6586 47.9991H27.9814C29.7644 47.9991 31.2156 46.5478 31.2156 44.7648V28.6548C31.2156 28.5991 31.1934 28.5508 31.184 28.4978C31.1905 28.4313 31.1945 28.3642 31.1979 28.297H37.3784V47.0783C37.3784 47.5872 37.7902 47.9991 38.2991 47.9991H41.4272C41.9362 47.9991 42.348 47.5872 42.348 47.0783V28.297H43.6796C45.0607 28.297 46.1837 27.1739 46.1837 25.7928C46.1837 24.4118 45.0607 23.2878 43.6796 23.2878ZM6.96388 46.1576H5.67721V28.2988H6.96388V46.1576ZM40.5065 46.1576H39.2198V28.2988H40.5065V46.1576ZM13.6535 23.3463L22.8734 14.7352C22.8773 14.7314 22.8785 14.7263 22.8824 14.7225C22.8864 14.7186 22.8919 14.7175 22.8958 14.7136C22.9174 14.692 22.9381 14.6686 22.9579 14.6452C23.1647 14.3917 23.3796 14.1903 23.6349 14.014C24.2185 13.5878 24.9126 13.3631 25.6418 13.3631H25.9278C27.8268 13.3631 29.3715 14.9078 29.3715 16.8059V23.2878H22.1891V21.3618L25.4719 18.7085C25.8675 18.3893 25.9287 17.8093 25.6086 17.4137C25.2894 17.019 24.7112 16.956 24.3138 17.277L14.9546 24.8416C14.5967 25.1293 14.0914 25.1374 13.7264 24.8568C13.4917 24.677 13.355 24.4145 13.3406 24.1195C13.3262 23.8228 13.4377 23.5486 13.6535 23.3463ZM19.8062 23.2878L20.3477 22.8502V23.2878H19.8062ZM1.84145 25.7928C1.84145 25.4269 2.13907 25.1293 2.50412 25.1293H11.7199C11.9069 25.5906 12.1995 26.0059 12.6042 26.317C12.673 26.3698 12.7473 26.4098 12.8192 26.4555H2.50412C2.13907 26.4555 1.84145 26.1579 1.84145 25.7928ZM20.0689 34.1747C19.81 34.3033 19.6266 34.5442 19.5726 34.8275L17.6287 45.0337C17.5711 45.3439 17.4012 45.628 17.1503 45.833C16.5713 46.3087 15.7045 46.2304 15.2234 45.7008C14.9555 45.4059 14.8278 45.0238 14.8656 44.6282L16.0381 32.6875L21.78 28.8499C21.9752 28.7193 22.1096 28.5206 22.1628 28.297H29.3414C29.2666 29.1136 28.8012 29.8355 28.056 30.2068L20.0689 34.1747ZM27.9814 46.1576H27.6586C26.8899 46.1576 26.2649 45.5327 26.2649 44.7648V33.1527L28.8779 31.854C29.0517 31.7674 29.2168 31.6691 29.3742 31.5622V44.7648C29.3742 45.5327 28.7493 46.1576 27.9814 46.1576ZM43.6796 26.4555H15.8427C15.9337 26.3977 16.0262 26.3431 16.1118 26.2739L17.5279 25.1293H43.6796C44.0447 25.1293 44.3423 25.4269 44.3423 25.7928C44.3423 26.1579 44.0447 26.4555 43.6796 26.4555Z" fill="currentColor" />
+                </svg>
+              </div>
+              <div className="mt-4 text-base font-medium text-center">
+                Physiotherapy Clinic
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-px justify-center items-center px-16 w-full max-md:px-5 max-md:max-w-full">
+            <div className="group flex overflow-hidden flex-col flex-1 self-stretch px-4 py-5 text-white bg-teal-800 hover:text-secondColor hover:bg-emerald-50 bg-opacity-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col justify-center items-center self-center py-0.5 w-12 min-h-12">
+                <svg width="31" height="43" viewBox="0 0 31 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.65385 33.5C3.65385 37.9183 5.95201 41.5 10.1154 41.5C14.2788 41.5 17.6538 38.5 18.7308 33.5C19.2471 31.1026 20.3053 29.6535 21.9615 28.5C26.2692 25.5 29.5 20.8846 29.5 15.5C29.5 7.76801 23.232 1.5 15.5 1.5C7.76801 1.5 1.5 7.76801 1.5 15.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9.5 27.5C12.2701 27.5 14.5156 25.4853 14.5156 23C14.5156 20.5147 12.2701 18.5 9.5 18.5C9.5 14.4662 10.4277 9.5 15.5188 9.5C19.0996 9.5 21.1992 12.2483 21.5 15.8" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </div>
+              <div className="mt-4 text-base font-medium text-center">
+                ENT Clinic
+              </div>
+            </div>
+            <div className="group flex overflow-hidden flex-col flex-1 self-stretch px-4 py-5 text-white bg-teal-800 hover:text-secondColor hover:bg-emerald-50 bg-opacity-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col justify-center items-center self-center py-0.5 w-12 min-h-12">
+                <svg width="43" height="39" viewBox="0 0 43 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.50098 11.5C1.50098 11.5 10.4553 1.5 21.501 1.5C32.5467 1.5 41.501 11.5 41.501 11.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                  <path d="M40.5879 21.59C41.196 22.4426 41.5 22.8689 41.5 23.5C41.5 24.1311 41.196 24.5574 40.5879 25.41C37.8558 29.2411 30.8784 37.5 21.5 37.5C12.1216 37.5 5.14419 29.2411 2.41208 25.41C1.80403 24.5574 1.5 24.1311 1.5 23.5C1.5 22.8689 1.80403 22.4426 2.41208 21.59C5.14419 17.7589 12.1216 9.5 21.5 9.5C30.8784 9.5 37.8558 17.7589 40.5879 21.59Z" stroke="currentColor" stroke-width="3" />
+                  <path d="M27.501 23.5C27.501 20.1863 24.8147 17.5 21.501 17.5C18.1873 17.5 15.501 20.1863 15.501 23.5C15.501 26.8137 18.1873 29.5 21.501 29.5C24.8147 29.5 27.501 26.8137 27.501 23.5Z" stroke="currentColor" stroke-width="3" />
+                </svg>
+
+
+              </div>
+              <div className="mt-4 text-base font-medium text-center">
+                Eye Clinic
+              </div>
+            </div>
+            <div className="group flex overflow-hidden flex-col flex-1 self-stretch px-4 py-5 text-white bg-teal-800 hover:text-secondColor hover:bg-emerald-50 bg-opacity-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col justify-center items-center self-center py-0.5 w-12 min-h-12">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 7H9C7.89543 7 7 7.89543 7 9V16C7 22.0751 11.9249 27 18 27C24.0751 27 29 22.0751 29 16V9C29 7.89543 28.1046 7 27 7H23" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M37 31V33.5C37 38.7467 32.7467 43 27.5 43C22.2533 43 18 38.7467 18 33.5V27" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M23 5V9" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M13 5V9" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M41 27C41 29.2091 39.2091 31 37 31C34.7909 31 33 29.2091 33 27C33 24.7909 34.7909 23 37 23C39.2091 23 41 24.7909 41 27Z" stroke="currentColor" stroke-width="3" />
+                </svg>
+
+
+              </div>
+              <div className="mt-4 text-base font-medium text-center">
+                General Medicine Clinic
+              </div>
+            </div>
+            <div className="group flex overflow-hidden flex-col flex-1 self-stretch px-4 py-5 text-white bg-teal-800 hover:text-secondColor hover:bg-emerald-50 bg-opacity-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col justify-center items-center self-center py-0.5 w-12 min-h-12">
+                <svg width="44" height="41" viewBox="0 0 44 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M38.9406 0.445164C36.7708 -0.278272 34.099 1.14104 33.2392 3.48707C32.9832 4.1881 32.8274 5.17166 32.6544 6.3085C32.407 7.89665 32.0869 9.96364 31.3913 10.961C31.0642 9.99473 30.514 9.02497 29.5935 8.50477C29.4689 8.41693 26.4754 6.37578 21.7535 6.37578C17.0316 6.37578 14.0416 8.41694 13.9708 8.47034C13.0191 9.00778 12.455 9.99645 12.1228 10.9662C11.4237 9.96893 11.1002 7.90194 10.851 6.30532C10.6745 5.16849 10.524 4.18837 10.2662 3.48389C9.4062 1.13786 6.73981 -0.28665 4.56483 0.441989C2.32581 1.18783 -0.433957 4.26937 0.403457 8.80652C0.624936 9.99676 0.894875 10.9803 1.28937 11.9983C0.559201 12.6425 0.275397 13.6915 0.664714 14.6389L1.26687 16.0944C1.50565 16.6766 1.96245 17.1314 2.54211 17.3725C2.83453 17.4965 3.14081 17.5533 3.45053 17.5533C3.76024 17.5533 4.06132 17.4913 4.35376 17.3725C5.55458 16.8781 6.13078 15.5036 5.63418 14.303L5.03202 12.8475C4.7967 12.2739 4.35026 11.8244 3.75161 11.5694C3.36575 11.4144 2.95911 11.3748 2.55943 11.4247C2.21336 10.517 1.96595 9.62647 1.76693 8.55336C1.07999 4.83105 3.23768 2.33496 4.9922 1.7529C6.43182 1.27234 8.3594 2.3489 8.95287 3.96285C9.1657 4.53645 9.31104 5.50104 9.47198 6.52076C9.83534 8.87023 10.2472 11.5124 11.7352 12.527C11.6331 13.1885 11.6245 13.6777 11.6193 13.7259C11.5622 15.1142 11.4065 16.1254 11.2732 17.0159C10.9462 19.1449 10.7507 20.4333 12.4464 23.3529C13.0537 24.3984 13.9344 25.3113 14.7892 26.1933C16.388 27.8469 17.8951 29.4075 17.8951 31.8499C17.8951 32.3218 17.8865 32.7886 17.8813 33.2434C17.8415 35.8099 17.8051 38.0234 19.0648 39.2929C19.6947 39.9285 20.5979 40.2506 21.7485 40.2506C22.9009 40.2506 23.8041 39.9285 24.4322 39.2929C25.685 38.0234 25.6556 35.81 25.6158 33.2434C25.6071 32.7887 25.6019 32.3219 25.6019 31.8499C25.6019 29.4074 27.1125 27.8468 28.7078 26.1933C29.5592 25.3113 30.4399 24.3984 31.0507 23.3529C32.7464 20.4332 32.5526 19.1465 32.2238 17.0159C32.0871 16.1254 31.9314 15.116 31.8778 13.7483C31.8778 13.6914 31.8639 13.1971 31.767 12.527C33.2551 11.5125 33.6634 8.8719 34.0268 6.52605C34.186 5.5029 34.3331 4.54174 34.5459 3.96814C35.1394 2.35415 37.0618 1.27759 38.5066 1.75819C40.2611 2.34039 42.4171 4.8363 41.7319 8.55865C41.5329 9.63004 41.2837 10.5206 40.9394 11.43C40.5414 11.3818 40.1296 11.4214 39.7299 11.5799C39.1537 11.8262 38.7073 12.2809 38.4667 12.8545L37.8646 14.31C37.368 15.5089 37.9442 16.8851 39.145 17.3795C39.4374 17.4984 39.7437 17.5604 40.0482 17.5604C40.3545 17.5604 40.6642 17.4984 40.9566 17.3795C41.5363 17.1366 41.9931 16.6836 42.2319 16.1014L42.834 14.6459C43.2234 13.702 42.9361 12.653 42.2094 12.0053C42.6039 10.9873 42.8738 10.0038 43.0953 8.81354C43.9362 4.27652 41.1781 1.19334 38.9495 0.452532L38.9406 0.445164ZM2.86201 12.7748C2.98659 12.7748 3.10598 12.7972 3.22018 12.8402C3.46416 12.9453 3.6493 13.1365 3.75138 13.3742L4.35354 14.8297C4.55772 15.3275 4.32239 15.8925 3.83098 16.0958C3.58701 16.1922 3.32229 16.1922 3.08176 16.0958C2.84298 15.9941 2.6561 15.8098 2.55402 15.567L1.95186 14.1114C1.74768 13.6171 1.98647 13.0538 2.48824 12.8506C2.61282 12.8023 2.74086 12.7748 2.86544 12.7748L2.86201 12.7748ZM21.7396 11.197C24.906 11.197 27.211 12.5681 27.9184 13.0487C27.9755 13.9616 28.0205 16.9295 26.5895 20.2006C26.1777 21.1445 25.3974 22.0798 24.5789 23.072C23.5511 24.3104 22.4351 25.6643 21.7395 27.3265C21.0439 25.6643 19.9278 24.3156 18.9 23.072C18.0764 22.0798 17.3012 21.141 16.8894 20.2006C15.4584 16.9278 15.5034 13.9619 15.5605 13.0487C16.2699 12.5681 18.5732 11.197 21.7396 11.197ZM29.8462 22.6566C29.3236 23.5558 28.5398 24.3722 27.7075 25.2317C26.0689 26.9301 24.2123 28.8472 24.2123 31.8461C24.2123 32.3267 24.221 32.7987 24.2262 33.262C24.2608 35.515 24.2919 37.4648 23.4423 38.3193C23.1984 38.5656 22.8627 38.7207 22.437 38.7999V30.4869V30.4645C22.5391 27.7 24.1206 25.7895 25.6537 23.9432C26.5396 22.8753 27.3771 21.8659 27.8685 20.7463C29.7459 16.4607 29.2995 12.7385 29.277 12.5797C29.2545 12.404 29.161 12.2404 29.0243 12.1302C28.9049 12.0337 26.0741 9.80653 21.7465 9.80653C17.419 9.80653 14.5883 12.0337 14.4687 12.1302C14.332 12.2404 14.2386 12.404 14.2161 12.5797C14.1988 12.7347 13.7506 16.4605 15.6246 20.7463C16.116 21.8659 16.9534 22.8753 17.8393 23.9432C19.3724 25.7914 20.9539 27.7 21.056 30.4645V30.4869V38.7999C20.6303 38.7206 20.2946 38.5656 20.0507 38.3193C19.2045 37.4632 19.2357 35.5151 19.2669 33.262C19.2755 32.7986 19.2807 32.3267 19.2807 31.8461C19.2807 28.8472 17.4241 26.9303 15.7855 25.2317C14.9532 24.3722 14.1694 23.5557 13.6469 22.6566C12.1934 20.1555 12.3353 19.234 12.645 17.2205C12.7817 16.3386 12.9513 15.2448 13.0084 13.7583C13.017 12.8712 13.3319 10.4166 14.7006 9.6398C14.7266 9.62257 17.4829 7.76057 21.7481 7.76057C26.0098 7.76057 28.7699 9.62088 28.8492 9.67424C30.1607 10.4149 30.4757 12.8763 30.4878 13.7789C30.5449 15.2431 30.7144 16.3403 30.8511 17.2222C31.1608 19.2375 31.3027 20.1591 29.8493 22.6583L29.8462 22.6566ZM41.5447 14.1148L40.9426 15.5703C40.8457 15.8132 40.6553 15.9975 40.4148 16.0991C40.176 16.1956 39.9096 16.2008 39.6656 16.0991C39.169 15.8959 38.9354 15.3275 39.143 14.8331L39.7452 13.3776C39.8421 13.1399 40.0324 12.9504 40.2591 12.8522C40.5031 12.7558 40.773 12.7558 41.0118 12.8522C41.5084 13.0555 41.7524 13.6239 41.5482 14.1131L41.5447 14.1148Z" fill="currentColor" stroke="currentColor" stroke-width="0.5" />
+                </svg>
+              </div>
+              <div className="mt-4 text-base font-medium text-center">
+                Gynecology Medicine Clinic
+              </div>
+            </div>
+            <div className="group flex overflow-hidden flex-col flex-1 self-stretch px-4 py-5 text-white bg-teal-800 hover:text-secondColor hover:bg-emerald-50 bg-opacity-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col justify-center items-center self-center py-0.5 w-12 min-h-12">
+                <svg width="39" height="43" viewBox="0 0 39 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M35.886 23.499C39.1997 29.2385 37.2332 36.5775 31.4937 39.8913C25.7542 43.205 18.4151 41.2385 15.1014 35.499M35.886 23.499C32.5723 17.7594 25.2332 15.7929 19.4937 19.1066C13.7542 22.4204 11.7877 29.7594 15.1014 35.499M35.886 23.499L15.1014 35.499" stroke="currentColor" stroke-width="3" />
+                  <path d="M15.5851 8.58492L25.755 2.57565C29.4995 0.363092 34.2875 1.67612 36.4493 5.50837C38.1862 8.58715 37.6996 12.3553 35.4995 14.8652M15.5851 8.58492L5.41522 14.5942C1.67076 16.8067 0.387817 21.707 2.54968 25.5393C3.84948 27.8434 6.09863 29.2368 8.49951 29.5009M15.5851 8.58492L18.4995 13.5009" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </div>
+              <div className="mt-4 text-base font-medium text-center">
+                Internal Medicine Clinic
+              </div>
+            </div>
+            <div className="group flex overflow-hidden flex-col flex-1 self-stretch px-4 py-5 text-white bg-teal-800 hover:text-secondColor hover:bg-emerald-50 bg-opacity-50 transition-all duration-300 cursor-pointer">
+              <div className="flex flex-col justify-center items-center self-center py-0.5 w-12 min-h-12">
+                <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.8342 41.5C15.9021 40.4321 16.9701 39.3641 15.9825 33.5M14.8342 28.1671C12.1676 17.5008 14.1676 15.5008 14.8342 14.8342C15.5008 14.1676 17.5008 12.1676 28.1671 14.8342M14.8342 28.1671C4.16788 25.5005 2.83329 26.8325 1.5 28.1658M14.8342 28.1671C25.5005 30.8337 27.4992 28.8324 28.1658 28.1658C28.8324 27.4992 30.8337 25.5005 28.1671 14.8342M41.5 14.8342C40.1667 16.1675 38.8334 17.5008 28.1671 14.8342M28.1658 1.5C27.0979 2.56787 26.0309 3.63658 27.0184 9.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+                </svg>
+
+              </div>
+              <div className="mt-4 text-base font-medium text-center">
+                Genetic Medicine Clinic
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex overflow-hidden flex-col items-center pt-16 pb-40 mt-16 w-full bg-emerald-50 max-md:pb-24 max-md:mt-10 max-md:max-w-full">
+        {/* AboutUs Section */}
+        <div className="flex flex-wrap gap-10 justify-between items-start w-full px-14">
+          <div className="flex flex-col min-w-60 w-[650px]">
+            <div className="flex flex-col w-full">
+              <div className="flex flex-col w-full">
+                <div className="flex gap-2 items-center self-start text-lg font-medium text-orange-400">
+                  <svg width="25" height="24" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.2775 11.6117H21.1109C20.7534 11.61 20.4352 11.9128 20.3169 12.3652L18.1294 20.7257L12.8525 0.994653C12.7315 0.547496 12.416 0.25 12.0611 0.25C11.7022 0.255281 11.3841 0.565122 11.271 1.02106L8.50771 11.3866H4.13271C3.66866 11.3866 3.29137 11.8919 3.29137 12.5133C3.29137 13.1347 3.66866 13.64 4.13271 13.64H9.10069C9.45564 13.64 9.77245 13.3407 9.89078 12.8918L12.0651 4.73049L17.3457 24.4827C17.4654 24.9299 17.7822 25.2274 18.1358 25.2274C18.4973 25.2256 18.8168 24.9158 18.9299 24.4563L21.7063 13.8654H26.2772C26.7412 13.8654 27.1185 13.3602 27.1185 12.7387C27.1185 12.1173 26.7415 11.6117 26.2775 11.6117Z" fill="#ED932B" />
+                    <path d="M8.50771 11.3866L11.271 1.02106C11.3841 0.565122 11.7022 0.255281 12.0611 0.25C12.416 0.25 12.7315 0.547496 12.8525 0.994653L18.1294 20.7257L20.3169 12.3652C20.4352 11.9128 20.7534 11.61 21.1109 11.6117H26.2775C26.7415 11.6117 27.1185 12.1173 27.1185 12.7387C27.1185 13.3602 26.7412 13.8654 26.2772 13.8654H21.7063L18.9299 24.4563C18.8168 24.9158 18.4973 25.2256 18.1358 25.2274C17.7822 25.2274 17.4654 24.9299 17.3457 24.4827L12.0651 4.73049L9.89078 12.8918C9.77245 13.3407 9.45564 13.64 9.10069 13.64M8.50771 11.3866H4.13271M8.50771 11.3866H2.64428M4.13271 11.3866C3.66866 11.3866 3.29137 11.8919 3.29137 12.5133M4.13271 11.3866C3.66866 11.3866 0.25 11.7438 0.25 12.3652M4.13271 11.3866C3.66866 11.3866 1.1219 11.7438 1.1219 12.3652M4.13271 11.3866C3.66866 11.3866 1.62682 11.7438 1.62682 12.3652M4.13271 11.3866C3.66866 11.3866 0.649103 11.7438 0.649103 12.3652M4.13271 11.3866C3.66866 11.3866 2.10392 11.7438 2.10392 12.3652M4.13271 11.3866C3.66866 11.3866 2.56115 11.8532 2.56115 12.4747M4.13271 11.3866C3.66866 11.3866 2.96642 11.8532 2.96642 12.4747M3.29137 12.5133C3.29137 13.1347 3.66866 13.64 4.13271 13.64M3.29137 12.5133C3.29137 13.1347 2.18023 13.64 2.64428 13.64M3.29137 12.5133C3.29137 11.8919 2.18023 11.3866 2.64428 11.3866M4.13271 13.64H9.10069M4.13271 13.64C3.66866 13.64 0.25 12.9867 0.25 12.3652M4.13271 13.64C3.66866 13.64 1.1219 12.9867 1.1219 12.3652M4.13271 13.64C3.66866 13.64 1.62682 12.9867 1.62682 12.3652M4.13271 13.64C3.66866 13.64 0.649103 12.9867 0.649103 12.3652M4.13271 13.64C3.66866 13.64 2.10392 12.9867 2.10392 12.3652M4.13271 13.64C3.66866 13.64 2.56115 13.0961 2.56115 12.4747M4.13271 13.64C3.66866 13.64 2.96642 13.0961 2.96642 12.4747M9.10069 13.64H2.64428M0.25 12.3652C0.25 12.9867 2.18023 13.64 2.64428 13.64M0.25 12.3652C0.25 11.7438 2.18023 11.3866 2.64428 11.3866M1.1219 12.3652C1.1219 12.9867 2.18023 13.64 2.64428 13.64M1.1219 12.3652C1.1219 11.7438 2.18023 11.3866 2.64428 11.3866M1.62682 12.3652C1.62682 12.9867 2.18023 13.64 2.64428 13.64M1.62682 12.3652C1.62682 11.7438 2.18023 11.3866 2.64428 11.3866M0.649103 12.3652C0.649103 12.9867 2.18023 13.64 2.64428 13.64M0.649103 12.3652C0.649103 11.7438 2.18023 11.3866 2.64428 11.3866M2.10392 12.3652C2.10392 12.9867 2.18023 13.64 2.64428 13.64M2.10392 12.3652C2.10392 11.7438 2.18023 11.3866 2.64428 11.3866M2.56115 12.4747C2.56115 13.0961 2.18023 13.64 2.64428 13.64M2.56115 12.4747C2.56115 11.8532 2.18023 11.3866 2.64428 11.3866M2.96642 12.4747C2.96642 13.0961 2.18023 13.64 2.64428 13.64M2.96642 12.4747C2.96642 11.8532 2.18023 11.3866 2.64428 11.3866" stroke="#ED932B" stroke-width="0.5" />
+                  </svg>
+
+                  <div className="self-stretch my-auto">About Us</div>
+                </div>
+                <div className="mt-1 text-4xl font-semibold tracking-wide text-teal-700 leading-[52px] max-md:max-w-full">
+                  Providing integrated healthcare with the highest levels of
+                  quality and excellence
+                </div>
+              </div>
+              <div className="mt-3 text-base leading-6 text-stone-500 max-md:max-w-full">
+                Atlas International Medical Complex is a leading medical
+                institution that seeks to provide the best levels of healthcare
+                by integrating innovation and excellence. We are committed to
+                providing comprehensive medical services that meet the needs of
+                our community using innovative methods and international
+                standards.{" "}
+              </div>
+            </div>
+            <img
+              alt=""
+              loading="lazy"
+              srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/591d2e228b7c23e9001771d8d28839586e4b5dac?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/591d2e228b7c23e9001771d8d28839586e4b5dac?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/591d2e228b7c23e9001771d8d28839586e4b5dac?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/591d2e228b7c23e9001771d8d28839586e4b5dac?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/591d2e228b7c23e9001771d8d28839586e4b5dac?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/591d2e228b7c23e9001771d8d28839586e4b5dac?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/591d2e228b7c23e9001771d8d28839586e4b5dac?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/591d2e228b7c23e9001771d8d28839586e4b5dac?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain mt-11 max-w-full aspect-[1.87] rounded-[50px_5px_50px_5px] w-[640px] max-md:mt-10"
+            />
+          </div>
+          <div className="flex flex-col text-base min-w-60 w-[598px] max-md:max-w-full">
+            <img
+              alt=""
+              loading="lazy"
+              srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/de954b02647bd8c3e6b88f0d7f7408ecb682342d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/de954b02647bd8c3e6b88f0d7f7408ecb682342d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/de954b02647bd8c3e6b88f0d7f7408ecb682342d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/de954b02647bd8c3e6b88f0d7f7408ecb682342d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/de954b02647bd8c3e6b88f0d7f7408ecb682342d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/de954b02647bd8c3e6b88f0d7f7408ecb682342d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/de954b02647bd8c3e6b88f0d7f7408ecb682342d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/de954b02647bd8c3e6b88f0d7f7408ecb682342d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain w-full aspect-[1.66] rounded-[50px_5px_50px_5px] max-md:max-w-full"
+            />
+            <div className="mt-8 leading-6 text-stone-500 max-md:max-w-full">
+              Our specialized team works with passion and professionalism to
+              ensure the provision of distinguished medical care that enhances
+              the quality of life of patients. We believe in the importance of
+              continuous development, and we always strive to keep pace with the
+              latest developments in the field of medicine. Our vision is to
+              build strong relationships with the local community and provide
+              health services that contribute to improving healthcare in
+              general.
+            </div>
+            <div className="flex gap-2.5 justify-center items-center self-start px-8 mt-8 font-semibold text-white bg-cyan-800 leading-[58px] rounded-[60px] max-md:px-5">
+              <div className="self-stretch my-auto">About Us</div>
+            </div>
+          </div>
+        </div>
+        {/* Why chooseUs Section  */}
+        <div className="flex flex-col items-center mt-24 max-w-full text-center w-[700px] max-md:mt-10">
+          <div className="flex flex-col items-center max-w-full text-4xl font-semibold tracking-wide leading-tight text-teal-700 w-[670px]">
+            <div className="text-teal-700 max-md:max-w-full">
+              Why choose us?
+            </div>
+          </div>
+          <div className="mt-3 text-base leading-6 text-stone-500 max-md:max-w-full">
+            When it comes to healthcare, choosing the right place for treatment
+            can have a significant impact on your health and comfort. Atlas
+            International Medical Complex is a great choice for several reasons
+            that set us apart from others in the field.
+          </div>
+        </div>
+        <div className="flex flex-col self-stretch mt-16 -mb-8 w-full max-md:mt-10 max-md:mb-2.5 max-md:max-w-full">
+          <div className="flex flex-wrap gap-5 items-center px-16 w-full max-md:px-5 max-md:max-w-full">
+            <div className="flex gap-1 items-center self-stretch py-6 pr-4 pl-1 my-auto bg-white min-h-[159px] min-w-60 rounded-[50px_3px] w-[313px]">
+              <img
+                alt=""
+                loading="lazy"
+                srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/173744376fbbaa87ddf1a9e6a722ad56523cccb3?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/173744376fbbaa87ddf1a9e6a722ad56523cccb3?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/173744376fbbaa87ddf1a9e6a722ad56523cccb3?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/173744376fbbaa87ddf1a9e6a722ad56523cccb3?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/173744376fbbaa87ddf1a9e6a722ad56523cccb3?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/173744376fbbaa87ddf1a9e6a722ad56523cccb3?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/173744376fbbaa87ddf1a9e6a722ad56523cccb3?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/173744376fbbaa87ddf1a9e6a722ad56523cccb3?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-square w-[110px]"
+              />
+              <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-0">
+                <div className="text-base leading-5 text-stone-500">
+                  Expert Doctors & Specialists
+                </div>
+                <div className="mt-2 text-5xl font-semibold text-teal-400 max-md:text-4xl">
+                  +50
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-1 shrink gap-1 items-center self-stretch py-6 pr-4 pl-2 my-auto bg-white basis-0 min-h-[159px] min-w-60 rounded-[50px_3px]">
+              <img
+                alt=""
+                loading="lazy"
+                srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f0dde05648f8190c827373bd5c3ce4002a37fc9f?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f0dde05648f8190c827373bd5c3ce4002a37fc9f?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f0dde05648f8190c827373bd5c3ce4002a37fc9f?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f0dde05648f8190c827373bd5c3ce4002a37fc9f?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f0dde05648f8190c827373bd5c3ce4002a37fc9f?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f0dde05648f8190c827373bd5c3ce4002a37fc9f?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f0dde05648f8190c827373bd5c3ce4002a37fc9f?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f0dde05648f8190c827373bd5c3ce4002a37fc9f?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-square w-[110px]"
+              />
+              <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-0">
+                <div className="text-base leading-5 text-stone-500">
+                  Qualified Medical Staff
+                </div>
+                <div className="mt-2 text-5xl font-semibold text-teal-400 max-md:text-4xl">
+                  +150
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-1 shrink gap-1 items-center self-stretch py-6 pr-4 pl-1 my-auto bg-white basis-0 min-h-[159px] min-w-60 rounded-[50px_3px]">
+              <img
+                alt=""
+                loading="lazy"
+                srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ce2cf6c26cc66a6da1e07ccc3139ce5442a86ab0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ce2cf6c26cc66a6da1e07ccc3139ce5442a86ab0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ce2cf6c26cc66a6da1e07ccc3139ce5442a86ab0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ce2cf6c26cc66a6da1e07ccc3139ce5442a86ab0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ce2cf6c26cc66a6da1e07ccc3139ce5442a86ab0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ce2cf6c26cc66a6da1e07ccc3139ce5442a86ab0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ce2cf6c26cc66a6da1e07ccc3139ce5442a86ab0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ce2cf6c26cc66a6da1e07ccc3139ce5442a86ab0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-square w-[110px]"
+              />
+              <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-0">
+                <div className="text-base leading-5 text-stone-500">
+                  Medical Departments & Clinics
+                </div>
+                <div className="mt-2 text-5xl font-semibold text-teal-400 max-md:text-4xl">
+                  +20
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-1 items-center self-stretch py-6 pr-4 pl-1 my-auto bg-white min-h-[159px] min-w-60 rounded-[50px_3px] w-[313px]">
+              <img
+                alt=""
+                loading="lazy"
+                srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/7a2984b5046df45fbd4fde53dc476c771f55f631?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/7a2984b5046df45fbd4fde53dc476c771f55f631?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/7a2984b5046df45fbd4fde53dc476c771f55f631?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/7a2984b5046df45fbd4fde53dc476c771f55f631?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/7a2984b5046df45fbd4fde53dc476c771f55f631?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/7a2984b5046df45fbd4fde53dc476c771f55f631?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/7a2984b5046df45fbd4fde53dc476c771f55f631?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/7a2984b5046df45fbd4fde53dc476c771f55f631?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-square w-[110px]"
+              />
+              <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-0">
+                <div className="text-base leading-5 text-stone-500">
+                  Fully Equipped Operating Rooms
+                </div>
+                <div className="mt-2 text-5xl font-semibold text-teal-400 max-md:text-4xl">
+                  +10
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-5 justify-between items-center px-16 mt-5 w-full max-md:px-5 max-md:max-w-full">
+            <div className="flex gap-1 items-center self-stretch py-6 pr-4 pl-1 my-auto bg-white min-h-[159px] min-w-60 rounded-[50px_3px] w-[313px]">
+              <img
+                alt=""
+                loading="lazy"
+                srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/bdfcbb1608807fe68af29c0f06b0815185636d28?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/bdfcbb1608807fe68af29c0f06b0815185636d28?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/bdfcbb1608807fe68af29c0f06b0815185636d28?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/bdfcbb1608807fe68af29c0f06b0815185636d28?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/bdfcbb1608807fe68af29c0f06b0815185636d28?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/bdfcbb1608807fe68af29c0f06b0815185636d28?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/bdfcbb1608807fe68af29c0f06b0815185636d28?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/bdfcbb1608807fe68af29c0f06b0815185636d28?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-square w-[110px]"
+              />
+              <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-0">
+                <div className="text-base leading-5 text-stone-500">
+                  Patients Treated Annually
+                </div>
+                <div className="mt-2 text-5xl font-semibold text-teal-400 max-md:text-4xl">
+                  30K
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-1 items-center self-stretch py-7 pr-4 pl-1 my-auto bg-white min-h-[159px] min-w-60 rounded-[50px_3px] w-[313px]">
+              <img
+                alt=""
+                loading="lazy"
+                srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fb0156bd4deba5ab59aabe7d3dbc18e53c58a7a8?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fb0156bd4deba5ab59aabe7d3dbc18e53c58a7a8?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fb0156bd4deba5ab59aabe7d3dbc18e53c58a7a8?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fb0156bd4deba5ab59aabe7d3dbc18e53c58a7a8?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fb0156bd4deba5ab59aabe7d3dbc18e53c58a7a8?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fb0156bd4deba5ab59aabe7d3dbc18e53c58a7a8?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fb0156bd4deba5ab59aabe7d3dbc18e53c58a7a8?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fb0156bd4deba5ab59aabe7d3dbc18e53c58a7a8?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-[1.22] w-[110px]"
+              />
+              <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-0">
+                <div className="text-base leading-5 text-stone-500">
+                  Insurance Providers Accepted
+                </div>
+                <div className="mt-2 text-5xl font-semibold text-teal-400 max-md:text-4xl">
+                  15
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-1 items-center self-stretch py-6 pr-4 pl-1 my-auto bg-white min-h-[159px] min-w-60 rounded-[50px_3px] w-[313px]">
+              <img
+                alt=""
+                loading="lazy"
+                srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e23de9725eb17ec72c4956a66f222109390f3fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e23de9725eb17ec72c4956a66f222109390f3fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e23de9725eb17ec72c4956a66f222109390f3fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e23de9725eb17ec72c4956a66f222109390f3fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e23de9725eb17ec72c4956a66f222109390f3fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e23de9725eb17ec72c4956a66f222109390f3fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e23de9725eb17ec72c4956a66f222109390f3fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e23de9725eb17ec72c4956a66f222109390f3fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-square w-[110px]"
+              />
+              <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-0">
+                <div className="text-base leading-5 text-stone-500">
+                  Emergency & Support Services
+                </div>
+                <div className="mt-2 text-5xl font-semibold text-teal-400 max-md:text-4xl">
+                  +20
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-1 items-center self-stretch py-6 pr-4 pl-1 my-auto bg-white min-h-[159px] min-w-60 rounded-[50px_3px] w-[313px]">
+              <img
+                alt=""
+                loading="lazy"
+                srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f8099ec67f61f76f64565fccd0f879bd9c496f4d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f8099ec67f61f76f64565fccd0f879bd9c496f4d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f8099ec67f61f76f64565fccd0f879bd9c496f4d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f8099ec67f61f76f64565fccd0f879bd9c496f4d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f8099ec67f61f76f64565fccd0f879bd9c496f4d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f8099ec67f61f76f64565fccd0f879bd9c496f4d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f8099ec67f61f76f64565fccd0f879bd9c496f4d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f8099ec67f61f76f64565fccd0f879bd9c496f4d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-square w-[110px]"
+              />
+              <div className="flex flex-col flex-1 shrink justify-center self-stretch my-auto basis-0">
+                <div className="text-base leading-5 text-stone-500">
+                  Patient Satisfaction Rate
+                </div>
+                <div className="mt-2 text-5xl font-semibold text-teal-400 max-md:text-4xl">
+                  97%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col mt-16 w-full bg-neutral-100 max-md:mt-10 max-md:max-w-full">
+        <div className="flex flex-col py-16 w-full max-md:max-w-full">
+          <div className="flex flex-col items-center self-center max-w-full w-[730px]">
+            <div className="flex gap-2 items-center text-lg font-medium text-orange-400">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/b3da39ad2669f908b5f0155419c8f7139f2a16b2?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-[1.04] w-[26px]"
+              />
+              <div className="self-stretch my-auto">Our Partners</div>
+            </div>
+            <div className="mt-2 text-4xl font-semibold leading-tight text-center text-teal-700 max-md:max-w-full">
+              Supported Insurance Company
+            </div>
+            <div className="mt-2 text-base leading-6 text-center text-stone-500 max-md:max-w-full">
+              Atlas International Medical Complex is your trusted destination
+              for integrated healthcare, providing high-quality medical services
+              by a team of specialists.
+            </div>
+          </div>
+          <div className="flex flex-col mt-8 w-full max-md:max-w-full">
+            <div className="flex flex-wrap gap-4 justify-center items-center px-16 w-full max-md:px-5 max-md:max-w-full">
+              <div className="flex flex-1 shrink gap-2.5 justify-center items-center self-stretch px-8 my-auto bg-white rounded-xl border-0 border-solid aspect-square basis-0 border-sky-950 min-h-[200px] max-md:px-5">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fcf5085aefb1388edbb3eb73481b970ab13012e0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fcf5085aefb1388edbb3eb73481b970ab13012e0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fcf5085aefb1388edbb3eb73481b970ab13012e0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fcf5085aefb1388edbb3eb73481b970ab13012e0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fcf5085aefb1388edbb3eb73481b970ab13012e0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fcf5085aefb1388edbb3eb73481b970ab13012e0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fcf5085aefb1388edbb3eb73481b970ab13012e0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/fcf5085aefb1388edbb3eb73481b970ab13012e0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain self-stretch my-auto aspect-[1.62] w-[141px]"
+                />
+              </div>
+              <div className="flex flex-1 shrink gap-2.5 justify-center items-center self-stretch px-8 my-auto bg-white rounded-xl border-0 border-solid aspect-square basis-0 border-sky-950 min-h-[200px] max-md:px-5">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d9d064527adf5f87b8bd8b540e7a568ef8558fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d9d064527adf5f87b8bd8b540e7a568ef8558fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d9d064527adf5f87b8bd8b540e7a568ef8558fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d9d064527adf5f87b8bd8b540e7a568ef8558fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d9d064527adf5f87b8bd8b540e7a568ef8558fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d9d064527adf5f87b8bd8b540e7a568ef8558fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d9d064527adf5f87b8bd8b540e7a568ef8558fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d9d064527adf5f87b8bd8b540e7a568ef8558fb1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain self-stretch my-auto aspect-[1.62] w-[141px]"
+                />
+              </div>
+              <div className="flex flex-1 shrink gap-2.5 justify-center items-center self-stretch px-8 my-auto bg-white rounded-xl border-0 border-solid aspect-square basis-0 border-sky-950 min-h-[200px] max-md:px-5">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/86b01f30c236ae64019358fa666fddb6dc07e757?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/86b01f30c236ae64019358fa666fddb6dc07e757?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/86b01f30c236ae64019358fa666fddb6dc07e757?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/86b01f30c236ae64019358fa666fddb6dc07e757?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/86b01f30c236ae64019358fa666fddb6dc07e757?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/86b01f30c236ae64019358fa666fddb6dc07e757?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/86b01f30c236ae64019358fa666fddb6dc07e757?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/86b01f30c236ae64019358fa666fddb6dc07e757?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain self-stretch my-auto aspect-[1.62] w-[141px]"
+                />
+              </div>
+              <div className="flex flex-1 shrink gap-2.5 justify-center items-center self-stretch px-8 my-auto bg-white rounded-xl border-0 border-solid aspect-square basis-0 border-sky-950 min-h-[200px] max-md:px-5">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e86a14f9b8547dbe779910750944f5888b118a1d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e86a14f9b8547dbe779910750944f5888b118a1d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e86a14f9b8547dbe779910750944f5888b118a1d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e86a14f9b8547dbe779910750944f5888b118a1d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e86a14f9b8547dbe779910750944f5888b118a1d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e86a14f9b8547dbe779910750944f5888b118a1d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e86a14f9b8547dbe779910750944f5888b118a1d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e86a14f9b8547dbe779910750944f5888b118a1d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain self-stretch my-auto aspect-[1.62] w-[141px]"
+                />
+              </div>
+              <div className="flex flex-1 shrink gap-2.5 justify-center items-center self-stretch px-8 my-auto bg-white rounded-xl border-0 border-solid aspect-square basis-0 border-neutral-200 min-h-[200px] max-md:px-5">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e540f439807a74f227ec7b260bd4ef854e28ad98?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e540f439807a74f227ec7b260bd4ef854e28ad98?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e540f439807a74f227ec7b260bd4ef854e28ad98?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e540f439807a74f227ec7b260bd4ef854e28ad98?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e540f439807a74f227ec7b260bd4ef854e28ad98?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e540f439807a74f227ec7b260bd4ef854e28ad98?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e540f439807a74f227ec7b260bd4ef854e28ad98?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e540f439807a74f227ec7b260bd4ef854e28ad98?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain self-stretch my-auto aspect-[1.62] w-[141px]"
+                />
+              </div>
+              <div className="flex flex-1 shrink gap-2.5 justify-center items-center self-stretch px-8 my-auto bg-white rounded-xl border-0 border-solid aspect-square basis-0 border-neutral-200 min-h-[200px] max-md:px-5">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ca16b05d02a090ad92f5d77bad632e56061af40e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ca16b05d02a090ad92f5d77bad632e56061af40e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ca16b05d02a090ad92f5d77bad632e56061af40e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ca16b05d02a090ad92f5d77bad632e56061af40e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ca16b05d02a090ad92f5d77bad632e56061af40e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ca16b05d02a090ad92f5d77bad632e56061af40e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ca16b05d02a090ad92f5d77bad632e56061af40e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ca16b05d02a090ad92f5d77bad632e56061af40e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain self-stretch my-auto aspect-[1.62] w-[141px]"
+                />
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-4 justify-center items-center px-16 mt-4 w-full max-md:px-5 max-md:max-w-full">
+              <div className="flex flex-1 shrink gap-2.5 justify-center items-center self-stretch px-8 my-auto bg-white rounded-xl border-0 border-solid aspect-square basis-0 border-sky-950 min-h-[200px] max-md:px-5">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ebd797ea3f18035b6c96fe13831fb58efcaad130?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ebd797ea3f18035b6c96fe13831fb58efcaad130?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ebd797ea3f18035b6c96fe13831fb58efcaad130?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ebd797ea3f18035b6c96fe13831fb58efcaad130?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ebd797ea3f18035b6c96fe13831fb58efcaad130?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ebd797ea3f18035b6c96fe13831fb58efcaad130?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ebd797ea3f18035b6c96fe13831fb58efcaad130?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ebd797ea3f18035b6c96fe13831fb58efcaad130?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain self-stretch my-auto aspect-[1.62] w-[141px]"
+                />
+              </div>
+              <div className="flex flex-1 shrink gap-2.5 justify-center items-center self-stretch px-8 my-auto text-lg font-medium leading-loose text-center bg-white rounded-xl border-0 border-solid aspect-square basis-0 border-sky-950 min-h-[200px] text-slate-400 max-md:px-5">
+                <div className="self-stretch my-auto">Partner Logo</div>
+              </div>
+              <div className="flex flex-1 shrink gap-2.5 justify-center items-center self-stretch px-8 my-auto text-lg font-medium leading-loose text-center bg-white rounded-xl border-0 border-solid aspect-square basis-0 border-sky-950 min-h-[200px] text-slate-400 max-md:px-5">
+                <div className="self-stretch my-auto">Partner Logo</div>
+              </div>
+              <div className="flex flex-1 shrink gap-2.5 justify-center items-center self-stretch px-8 my-auto text-lg font-medium leading-loose text-center bg-white rounded-xl border-0 border-solid aspect-square basis-0 border-sky-950 min-h-[200px] text-slate-400 max-md:px-5">
+                <div className="self-stretch my-auto">Partner Logo</div>
+              </div>
+              <div className="flex flex-1 shrink gap-2.5 justify-center items-center self-stretch px-8 my-auto text-lg font-medium leading-loose text-center bg-white rounded-xl border-0 border-solid aspect-square basis-0 border-neutral-200 min-h-[200px] text-slate-400 max-md:px-5">
+                <div className="self-stretch my-auto">Partner Logo</div>
+              </div>
+              <div className="flex flex-1 shrink gap-2.5 justify-center items-center self-stretch px-8 my-auto text-lg font-medium leading-loose text-center bg-white rounded-xl border-0 border-solid aspect-square basis-0 border-neutral-200 min-h-[200px] text-slate-400 max-md:px-5">
+                <div className="self-stretch my-auto">Partner Logo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col mt-16 w-full max-md:mt-10 max-md:max-w-full">
+        <div className="flex flex-wrap gap-10 justify-between items-end pr-16 w-full max-md:pr-5 max-md:max-w-full">
+          <div className="flex flex-col px-16 min-w-60 w-[858px] max-md:px-5 max-md:max-w-full">
+            <div className="flex gap-2 items-center self-start text-lg font-medium text-orange-400">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/b3da39ad2669f908b5f0155419c8f7139f2a16b2?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-[1.08] w-[27px]"
+              />
+              <div className="self-stretch my-auto">Medical Team</div>
+            </div>
+            <div className="mt-2 text-4xl font-semibold leading-tight text-teal-700 max-md:max-w-full">
+              Our Experienced Medical Staff
+            </div>
+            <div className="mt-2 text-base text-stone-500 max-md:max-w-full">
+              Meet our team of internationally trained specialists.
+            </div>
+          </div>
+          <div className="flex gap-2.5 justify-center items-center px-2 py-1 text-base leading-8 text-right text-teal-800 rounded-[50px]">
+            <div className="self-stretch my-auto text-teal-800 w-[87px]">
+              View All
+            </div>
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f01c6a2de7790f0ca1b2cac6000806c04bdeaf5a?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col mt-8 w-full max-md:max-w-full">
+          <div className="flex flex-wrap gap-3 items-center pl-16 w-full min-h-14 max-md:pl-5 max-md:max-w-full">
+            <div className="flex grow shrink gap-1 items-center self-stretch px-3 py-4 my-auto text-sm text-center rounded-xl bg-neutral-100 min-w-60 text-stone-300 w-[250px]">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/ee20eac746b54c77134d3e88ec43a0afbfb4aaf0?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+              />
+              <div className="self-stretch my-auto text-stone-300">
+                Search by doctor name
+              </div>
+            </div>
+            <div className="grow shrink self-stretch my-auto w-0.5 border-2 border-solid bg-stone-300 border-stone-300 h-[52px]" />
+            <div className="flex gap-2 justify-center items-center self-stretch px-3 py-4 my-auto text-sm font-medium text-center text-teal-800 bg-emerald-50 rounded-xl">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/37de218f04c49a9c9c0701452cb5af936c6dd8e8?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+              />
+              <div className="self-stretch my-auto text-teal-800">
+                ENT Clinic
+              </div>
+            </div>
+            <div className="flex gap-2 justify-center items-center self-stretch px-3 py-4 my-auto text-sm font-medium text-center text-teal-800 bg-emerald-50 rounded-xl">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f429d2e49aebfd838cb1115f42f0d13a87d16108?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+              />
+              <div className="self-stretch my-auto text-teal-800">
+                Orthopedic Clinic
+              </div>
+            </div>
+            <div className="flex gap-2 justify-center items-center self-stretch px-3 py-4 my-auto bg-teal-800 rounded-xl shadow-md min-w-60">
+              <div className="flex gap-1.5 items-center self-stretch p-0.5 my-auto w-6">
+                <img
+                  alt=""
+                  loading="lazy"
+                  src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/de1665be4720708037ee07d7ae51079b4a209626?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain self-stretch my-auto w-5 aspect-square"
+                />
+              </div>
+              <div className="self-stretch my-auto text-sm font-medium text-emerald-50">
+                Dermatology & Cosmetic Clinic
+              </div>
+            </div>
+            <div className="flex gap-2 justify-center items-center self-stretch px-3 py-4 my-auto text-sm font-medium text-center text-teal-800 bg-emerald-50 rounded-xl">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/25d82741373ad467eca705154f437d41a0cd567f?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+              />
+              <div className="self-stretch my-auto text-teal-800">
+                Physiotherapy Clinic
+              </div>
+            </div>
+            <div className="flex gap-2 justify-center items-center self-stretch px-3 py-4 my-auto text-sm font-medium text-center text-teal-800 bg-emerald-50 rounded-xl">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f670641fc9d52adc7428ed1ec20f6bbb5a701287?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+              />
+              <div className="self-stretch my-auto text-teal-800">
+                Eye Clinic
+              </div>
+            </div>
+            <div className="flex gap-2 justify-center items-center self-stretch py-4 pr-1.5 pl-3 my-auto text-sm font-medium text-center text-teal-800 bg-emerald-50 rounded-xl">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e8c4d52971bb0caacedbf45488705b971e4ff597?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+              />
+              <div className="self-stretch my-auto text-teal-800">
+                Chest Clinic
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-6 justify-center items-center self-center mt-8 max-w-full min-h-[511px] w-[1312px]">
+            <div className="flex overflow-hidden flex-col grow shrink self-stretch my-auto bg-emerald-50 rounded-3xl shadow-lg min-w-60 w-[248px]">
+              <div className="flex overflow-hidden flex-col justify-center py-1 w-full">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/24eb1b3ffec24caec2eafa5a56a08766ec730d37?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/24eb1b3ffec24caec2eafa5a56a08766ec730d37?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/24eb1b3ffec24caec2eafa5a56a08766ec730d37?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/24eb1b3ffec24caec2eafa5a56a08766ec730d37?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/24eb1b3ffec24caec2eafa5a56a08766ec730d37?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/24eb1b3ffec24caec2eafa5a56a08766ec730d37?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/24eb1b3ffec24caec2eafa5a56a08766ec730d37?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/24eb1b3ffec24caec2eafa5a56a08766ec730d37?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain w-full aspect-square"
+                />
+              </div>
+              <div className="flex flex-col px-3 py-4 w-full max-w-[310px]">
+                <div className="flex flex-col w-full">
+                  <div className="text-lg font-semibold leading-loose whitespace-nowrap text-ellipsis text-neutral-800">
+                    Dr. Hussein Suliman
+                  </div>
+                  <div className="mt-3 text-base font-medium leading-loose text-teal-800 whitespace-nowrap text-ellipsis">
+                    General Dentist
+                  </div>
+                  <div className="mt-3 text-sm leading-5 text-ellipsis text-stone-500">
+                    Chief of Cornea & Refractive Surgery Units
+                  </div>
+                </div>
+                <div className="flex gap-2 items-start mt-4 w-full text-sm leading-8 text-right">
+                  <div className="flex gap-1.5 justify-center items-center px-2 py-1 tracking-tight text-teal-800 bg-sky-100 rounded-[50px]">
+                    <div className="self-stretch my-auto text-teal-800">
+                      View Profile
+                    </div>
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/22e04157795a746afb376618bfc95389776477f3?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                      className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+                    />
+                  </div>
+                  <div className="flex flex-1 shrink gap-2.5 justify-center items-center px-2 py-1 text-emerald-50 bg-teal-800 basis-0 rounded-[50px]">
+                    <div className="self-stretch my-auto text-emerald-50">
+                      Book Appointment
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex overflow-hidden flex-col grow shrink self-stretch my-auto bg-emerald-50 rounded-3xl border border-solid border-neutral-200 min-w-60 w-[248px]">
+              <div className="flex overflow-hidden flex-col justify-center py-1 w-full">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/069eba779f7172c28ff2e18f60c5b5e897890c8e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/069eba779f7172c28ff2e18f60c5b5e897890c8e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/069eba779f7172c28ff2e18f60c5b5e897890c8e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/069eba779f7172c28ff2e18f60c5b5e897890c8e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/069eba779f7172c28ff2e18f60c5b5e897890c8e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/069eba779f7172c28ff2e18f60c5b5e897890c8e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/069eba779f7172c28ff2e18f60c5b5e897890c8e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/069eba779f7172c28ff2e18f60c5b5e897890c8e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain w-full aspect-square"
+                />
+              </div>
+              <div className="flex flex-col px-3 py-4 w-full max-w-[310px]">
+                <div className="flex flex-col w-full">
+                  <div className="text-lg font-semibold leading-loose whitespace-nowrap text-ellipsis text-neutral-800">
+                    Dr. Fahd Fouad
+                  </div>
+                  <div className="mt-3 text-base font-medium leading-loose text-teal-800 whitespace-nowrap text-ellipsis">
+                    General Surgery
+                  </div>
+                  <div className="mt-3 text-sm leading-5 text-ellipsis text-stone-500">
+                    Chief of Cornea & Refractive Surgery Units
+                  </div>
+                </div>
+                <div className="flex gap-2 items-start mt-4 w-full text-sm leading-8 text-right">
+                  <div className="flex gap-1.5 justify-center items-center px-2 py-1 tracking-tight text-teal-800 bg-sky-100 rounded-[50px]">
+                    <div className="self-stretch my-auto text-teal-800">
+                      View Profile
+                    </div>
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/22e04157795a746afb376618bfc95389776477f3?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                      className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+                    />
+                  </div>
+                  <div className="flex flex-1 shrink gap-2.5 justify-center items-center px-2 py-1 text-emerald-50 bg-teal-800 basis-0 rounded-[50px]">
+                    <div className="self-stretch my-auto text-emerald-50">
+                      Book Appointment
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex overflow-hidden flex-col grow shrink self-stretch my-auto bg-emerald-50 rounded-3xl border border-solid border-neutral-200 min-w-60 w-[248px]">
+              <div className="flex overflow-hidden flex-col justify-center py-1 w-full">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/226a3b3805ff96b035bc555e79b82b603cd9c5e1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/226a3b3805ff96b035bc555e79b82b603cd9c5e1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/226a3b3805ff96b035bc555e79b82b603cd9c5e1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/226a3b3805ff96b035bc555e79b82b603cd9c5e1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/226a3b3805ff96b035bc555e79b82b603cd9c5e1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/226a3b3805ff96b035bc555e79b82b603cd9c5e1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/226a3b3805ff96b035bc555e79b82b603cd9c5e1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/226a3b3805ff96b035bc555e79b82b603cd9c5e1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain w-full aspect-square"
+                />
+              </div>
+              <div className="flex flex-col px-3 py-4 w-full max-w-[310px]">
+                <div className="flex flex-col w-full">
+                  <div className="text-lg font-semibold leading-loose whitespace-nowrap text-ellipsis text-neutral-800">
+                    Dr. Sumaya Saeed Abdelrazeq
+                  </div>
+                  <div className="mt-3 text-base font-medium leading-loose text-teal-800 whitespace-nowrap text-ellipsis">
+                    General Doctor
+                  </div>
+                  <div className="mt-3 text-sm leading-5 text-ellipsis text-stone-500">
+                    Chief of Cornea & Refractive Surgery Units
+                  </div>
+                </div>
+                <div className="flex gap-2 items-start mt-4 w-full text-sm leading-8 text-right">
+                  <div className="flex gap-1.5 justify-center items-center px-2 py-1 tracking-tight text-teal-800 bg-sky-100 rounded-[50px]">
+                    <div className="self-stretch my-auto text-teal-800">
+                      View Profile
+                    </div>
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/22e04157795a746afb376618bfc95389776477f3?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                      className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+                    />
+                  </div>
+                  <div className="flex flex-1 shrink gap-2.5 justify-center items-center px-2 py-1 text-emerald-50 bg-teal-800 basis-0 rounded-[50px]">
+                    <div className="self-stretch my-auto text-emerald-50">
+                      Book Appointment
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex overflow-hidden flex-col grow shrink self-stretch my-auto bg-emerald-50 rounded-3xl border border-solid border-neutral-200 min-w-60 w-[248px]">
+              <div className="flex overflow-hidden flex-col justify-center py-1 w-full">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aec90b32ff74de05b494f77affc8fd014e3cf23c?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aec90b32ff74de05b494f77affc8fd014e3cf23c?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aec90b32ff74de05b494f77affc8fd014e3cf23c?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aec90b32ff74de05b494f77affc8fd014e3cf23c?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aec90b32ff74de05b494f77affc8fd014e3cf23c?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aec90b32ff74de05b494f77affc8fd014e3cf23c?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aec90b32ff74de05b494f77affc8fd014e3cf23c?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aec90b32ff74de05b494f77affc8fd014e3cf23c?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain w-full aspect-square"
+                />
+              </div>
+              <div className="flex flex-col px-3 py-4 w-full max-w-[310px]">
+                <div className="flex flex-col w-full">
+                  <div className="text-lg font-semibold leading-loose whitespace-nowrap text-ellipsis text-neutral-800">
+                    Dr. Amirah Al Qahtany
+                  </div>
+                  <div className="mt-3 text-base font-medium tracking-tight leading-loose text-teal-800 whitespace-nowrap text-ellipsis">
+                    Consultant Physician in Genetic Medicine
+                  </div>
+                  <div className="mt-3 text-sm leading-5 text-ellipsis text-stone-500">
+                    Chief of Cornea & Refractive Surgery Units
+                  </div>
+                </div>
+                <div className="flex gap-2 items-start mt-4 w-full text-sm leading-8 text-right">
+                  <div className="flex gap-1.5 justify-center items-center px-2 py-1 tracking-tight text-teal-800 bg-sky-100 rounded-[50px]">
+                    <div className="self-stretch my-auto text-teal-800">
+                      View Profile
+                    </div>
+                    <img
+                      alt=""
+                      loading="lazy"
+                      src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/22e04157795a746afb376618bfc95389776477f3?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                      className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+                    />
+                  </div>
+                  <div className="flex flex-1 shrink gap-2.5 justify-center items-center px-2 py-1 text-emerald-50 bg-teal-800 basis-0 rounded-[50px]">
+                    <div className="self-stretch my-auto text-emerald-50">
+                      Book Appointment
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-2.5 items-center px-16 py-1 mt-8 w-full rounded-[50px] max-md:px-5 max-md:max-w-full">
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/0af00dae372f46736bdd2c2b1f37942691d2c204?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/5d7b4a66bfe1dcf92e54002473d2ef0aea925603?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col mt-16 w-full max-md:mt-10 max-md:max-w-full">
+        <div className="flex flex-col py-16 w-full max-md:max-w-full">
+          <div className="flex flex-col items-center self-center max-w-full w-[730px]">
+            <div className="flex gap-2 items-center text-lg font-medium text-orange-400 whitespace-nowrap">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/b3da39ad2669f908b5f0155419c8f7139f2a16b2?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-[1.04] w-[26px]"
+              />
+              <div className="self-stretch my-auto">Testimonials</div>
+            </div>
+            <div className="mt-2 text-4xl font-semibold leading-tight text-center text-teal-700 max-md:max-w-full">
+              What Our Patients Say
+            </div>
+            <div className="mt-2 text-base text-center text-stone-500 max-md:max-w-full">
+              Trusted by thousands of satisfied Patients
+            </div>
+          </div>
+          <div className="flex flex-col mt-8 w-full max-md:max-w-full">
+            <div className="flex flex-wrap gap-6 justify-center items-center px-16 w-full max-md:px-5 max-md:max-w-full">
+              <div className="flex flex-col flex-1 shrink self-stretch px-6 py-8 my-auto bg-emerald-50 border-0 border-solid basis-0 border-sky-950 min-h-[316px] min-w-60 rounded-[50px_5px] max-md:px-5 max-md:max-w-full">
+                <div className="text-lg leading-7 text-teal-800">
+                  “From booking the appointment to receiving treatment,
+                  everything was smooth and professional. The doctors were
+                  attentive and took time to explain every step clearly.”
+                </div>
+                <div className="flex flex-col mt-4 w-full">
+                  <div className="text-lg font-semibold leading-loose text-teal-800">
+                    Dr. Fahd Al Otaiby
+                  </div>
+                  <div className="text-sm leading-7 text-zinc-500">
+                    Former Patient - 22 Sep 2023
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col flex-1 shrink self-stretch px-6 py-8 my-auto bg-emerald-50 border-0 border-solid basis-0 border-sky-950 min-h-[316px] min-w-60 rounded-[50px_5px] max-md:px-5 max-md:max-w-full">
+                <div className="text-lg leading-7 text-teal-800">
+                  “I felt truly cared for at Atlas Medical Center. The staff
+                  were kind, organized, and very respectful. The clinic
+                  environment is clean and reassuring.”
+                </div>
+                <div className="flex flex-col mt-4 w-full">
+                  <div className="text-lg font-semibold leading-loose text-teal-800">
+                    Ms. Sara Al-Masry
+                  </div>
+                  <div className="text-sm leading-7 text-zinc-500">
+                    Former Patient - 22 Sep 2023
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col flex-1 shrink self-stretch px-6 py-8 my-auto bg-emerald-50 border-0 border-solid basis-0 border-sky-950 min-h-[316px] min-w-60 rounded-[50px_5px] max-md:px-5 max-md:max-w-full">
+                <div className="text-lg leading-7 text-teal-800">
+                  “The medical team was professional and supportive. I
+                  appreciated how easy it was to book my appointment and how
+                  comfortable the entire experience was.”
+                </div>
+                <div className="flex flex-col mt-4 w-full">
+                  <div className="text-lg font-semibold leading-loose text-teal-800">
+                    Eng. Ahmed Gamal
+                  </div>
+                  <div className="text-sm leading-7 text-zinc-500">
+                    Former Patient - 22 Sep 2023
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-2.5 items-center px-16 py-1 mt-8 w-full rounded-[50px] max-md:px-5 max-md:max-w-full">
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/0af00dae372f46736bdd2c2b1f37942691d2c204?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/5d7b4a66bfe1dcf92e54002473d2ef0aea925603?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col mt-16 w-full max-md:mt-10 max-md:max-w-full">
+        <div className="flex flex-wrap gap-10 justify-between items-end pr-16 w-full max-md:pr-5 max-md:max-w-full">
+          <div className="flex flex-col px-16 min-w-60 w-[858px] max-md:px-5 max-md:max-w-full">
+            <div className="flex gap-2 items-center self-start text-lg font-medium text-orange-400 whitespace-nowrap">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/b3da39ad2669f908b5f0155419c8f7139f2a16b2?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-[1.08] w-[27px]"
+              />
+              <div className="self-stretch my-auto">Blogs</div>
+            </div>
+            <div className="mt-2 text-4xl font-semibold leading-tight text-teal-700 max-md:max-w-full">
+              Reads That Might Interest You
+            </div>
+            <div className="mt-2 text-base leading-6 text-stone-500 max-md:max-w-full">
+              Helpful articles and medical insights to support your health and
+              guide better daily care decisions.
+            </div>
+          </div>
+          <div className="flex gap-2.5 justify-center items-center px-2 py-1 text-base leading-8 text-right text-teal-800 rounded-[50px]">
+            <div className="self-stretch my-auto text-teal-800 w-[87px]">
+              View All
+            </div>
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f01c6a2de7790f0ca1b2cac6000806c04bdeaf5a?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col mt-8 w-full max-md:max-w-full">
+          <div className="flex flex-wrap gap-6 justify-center items-center self-center max-w-full w-[1312px]">
+            <div className="flex overflow-hidden flex-col flex-1 shrink self-stretch my-auto bg-emerald-50 rounded-3xl shadow-lg basis-0 min-w-60 max-md:max-w-full">
+              <div className="flex overflow-hidden flex-col w-full max-md:max-w-full">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/39cabd539562748e0e785772f16a39add498d2dc?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/39cabd539562748e0e785772f16a39add498d2dc?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/39cabd539562748e0e785772f16a39add498d2dc?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/39cabd539562748e0e785772f16a39add498d2dc?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/39cabd539562748e0e785772f16a39add498d2dc?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/39cabd539562748e0e785772f16a39add498d2dc?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/39cabd539562748e0e785772f16a39add498d2dc?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/39cabd539562748e0e785772f16a39add498d2dc?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain w-full aspect-[1.34] max-md:max-w-full"
+                />
+              </div>
+              <div className="flex flex-col px-3 py-4 w-full max-md:max-w-full">
+                <div className="flex flex-col w-full">
+                  <div className="text-base font-semibold leading-7 text-ellipsis text-neutral-800">
+                    5 Signs You Shouldn’t Ignore About Your Dental Health
+                  </div>
+                  <div className="mt-3 text-sm leading-none text-ellipsis text-stone-500">
+                    18 Dec 2024
+                  </div>
+                </div>
+                <div className="flex gap-2.5 justify-center items-center self-start px-2 py-1 mt-4 text-sm font-medium leading-8 text-right text-white bg-teal-800 rounded-[50px]">
+                  <div className="self-stretch my-auto text-white w-[87px]">
+                    Read more
+                  </div>
+                  <img
+                    alt=""
+                    loading="lazy"
+                    src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/8f2ecec6f3f47258e7d93ac9e1a7f63d4c717fe1?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                    className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="flex overflow-hidden flex-col flex-1 shrink self-stretch my-auto bg-emerald-50 rounded-3xl border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full">
+              <div className="flex overflow-hidden flex-col justify-center py-1 w-full max-md:max-w-full">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/3ab1542f90ba6f0f09c2c981fbd77bbfa800f4d4?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/3ab1542f90ba6f0f09c2c981fbd77bbfa800f4d4?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/3ab1542f90ba6f0f09c2c981fbd77bbfa800f4d4?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/3ab1542f90ba6f0f09c2c981fbd77bbfa800f4d4?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/3ab1542f90ba6f0f09c2c981fbd77bbfa800f4d4?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/3ab1542f90ba6f0f09c2c981fbd77bbfa800f4d4?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/3ab1542f90ba6f0f09c2c981fbd77bbfa800f4d4?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/3ab1542f90ba6f0f09c2c981fbd77bbfa800f4d4?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain w-full aspect-[1.36] max-md:max-w-full"
+                />
+              </div>
+              <div className="flex flex-col px-3 py-4 w-full max-md:max-w-full">
+                <div className="flex flex-col w-full">
+                  <div className="text-base font-semibold leading-7 text-ellipsis text-neutral-800">
+                    How Regular Checkups Help Detect Health Issues Early
+                  </div>
+                  <div className="mt-3 text-sm leading-none text-ellipsis text-stone-500">
+                    18 Dec 2024
+                  </div>
+                </div>
+                <div className="flex gap-2.5 justify-center items-center self-start px-2 py-1 mt-4 text-sm font-medium leading-8 text-right text-teal-800 bg-sky-100 rounded-[50px]">
+                  <div className="self-stretch my-auto text-teal-800 w-[87px]">
+                    Read more
+                  </div>
+                  <img
+                    alt=""
+                    loading="lazy"
+                    src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/2a3f4cb2ca984b47194895098d43927e4acc9722?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                    className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="flex overflow-hidden flex-col flex-1 shrink self-stretch my-auto bg-emerald-50 rounded-3xl border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full">
+              <div className="flex overflow-hidden flex-col justify-center py-1 w-full max-md:max-w-full">
+                <img
+                  alt=""
+                  loading="lazy"
+                  srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d7ca5f4f8e3e112414bb6eea6897f46e4b13f937?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d7ca5f4f8e3e112414bb6eea6897f46e4b13f937?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d7ca5f4f8e3e112414bb6eea6897f46e4b13f937?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d7ca5f4f8e3e112414bb6eea6897f46e4b13f937?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d7ca5f4f8e3e112414bb6eea6897f46e4b13f937?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d7ca5f4f8e3e112414bb6eea6897f46e4b13f937?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d7ca5f4f8e3e112414bb6eea6897f46e4b13f937?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/d7ca5f4f8e3e112414bb6eea6897f46e4b13f937?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                  className="object-contain w-full aspect-[1.36] max-md:max-w-full"
+                />
+              </div>
+              <div className="flex flex-col px-3 py-4 w-full max-md:max-w-full">
+                <div className="flex flex-col w-full">
+                  <div className="text-base font-semibold leading-7 text-ellipsis text-neutral-800">
+                    Daily Skincare Tips Every Woman Should Follow for Healthy
+                    Skin
+                  </div>
+                  <div className="mt-3 text-sm leading-none text-ellipsis text-stone-500">
+                    18 Dec 2024
+                  </div>
+                </div>
+                <div className="flex gap-2.5 justify-center items-center self-start px-2 py-1 mt-4 text-sm font-medium leading-8 text-right text-teal-800 bg-sky-100 rounded-[50px]">
+                  <div className="self-stretch my-auto text-teal-800 w-[87px]">
+                    Read more
+                  </div>
+                  <img
+                    alt=""
+                    loading="lazy"
+                    src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/2a3f4cb2ca984b47194895098d43927e4acc9722?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                    className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-2.5 items-center px-16 py-1 mt-8 w-full rounded-[50px] max-md:px-5 max-md:max-w-full">
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/0af00dae372f46736bdd2c2b1f37942691d2c204?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/5d7b4a66bfe1dcf92e54002473d2ef0aea925603?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col mt-16 w-full max-md:mt-10 max-md:max-w-full">
+        <div className="flex flex-wrap gap-10 justify-between items-end pr-16 w-full max-md:pr-5 max-md:max-w-full">
+          <div className="flex flex-col px-16 min-w-60 w-[858px] max-md:px-5 max-md:max-w-full">
+            <div className="flex gap-2 items-center self-start text-lg font-medium text-orange-400 whitespace-nowrap">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/b3da39ad2669f908b5f0155419c8f7139f2a16b2?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto aspect-[1.08] w-[27px]"
+              />
+              <div className="self-stretch my-auto">Offers</div>
+            </div>
+            <div className="mt-2 text-4xl font-semibold text-teal-700 leading-[52px] max-md:max-w-full">
+              Stay Tuned to Our Offers Through Atlas Instagram Page
+            </div>
+          </div>
+          <div className="flex gap-2.5 justify-center items-center px-2 py-1 text-base leading-8 text-right text-teal-800 min-w-60 rounded-[50px]">
+            <div className="self-stretch my-auto text-teal-800">
+              Visit Our Instagram Page
+            </div>
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f01c6a2de7790f0ca1b2cac6000806c04bdeaf5a?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col mt-8 w-full max-md:max-w-full">
+          <div className="flex flex-wrap gap-6 justify-center items-center self-center max-w-full w-[1312px]">
+            <img
+              alt=""
+              loading="lazy"
+              srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aae04bca3d2666e4cee4a877803f246d3e60bb0b?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aae04bca3d2666e4cee4a877803f246d3e60bb0b?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aae04bca3d2666e4cee4a877803f246d3e60bb0b?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aae04bca3d2666e4cee4a877803f246d3e60bb0b?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aae04bca3d2666e4cee4a877803f246d3e60bb0b?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aae04bca3d2666e4cee4a877803f246d3e60bb0b?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aae04bca3d2666e4cee4a877803f246d3e60bb0b?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/aae04bca3d2666e4cee4a877803f246d3e60bb0b?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain grow shrink self-stretch my-auto aspect-[1/1] min-w-60 w-[248px]"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/c5c09621a455389a7cad48a3c88915cc29fe853a?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/c5c09621a455389a7cad48a3c88915cc29fe853a?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/c5c09621a455389a7cad48a3c88915cc29fe853a?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/c5c09621a455389a7cad48a3c88915cc29fe853a?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/c5c09621a455389a7cad48a3c88915cc29fe853a?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/c5c09621a455389a7cad48a3c88915cc29fe853a?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/c5c09621a455389a7cad48a3c88915cc29fe853a?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/c5c09621a455389a7cad48a3c88915cc29fe853a?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain grow shrink self-stretch my-auto aspect-[1/1] min-w-60 w-[248px]"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/2d411abd8c9eeb6f0017c9efba284b575fc99091?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/2d411abd8c9eeb6f0017c9efba284b575fc99091?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/2d411abd8c9eeb6f0017c9efba284b575fc99091?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/2d411abd8c9eeb6f0017c9efba284b575fc99091?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/2d411abd8c9eeb6f0017c9efba284b575fc99091?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/2d411abd8c9eeb6f0017c9efba284b575fc99091?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/2d411abd8c9eeb6f0017c9efba284b575fc99091?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/2d411abd8c9eeb6f0017c9efba284b575fc99091?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain grow shrink self-stretch my-auto aspect-[1/1] min-w-60 w-[248px]"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f2195ceb330035f8ea9d8c174ad4265cd686fa43?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f2195ceb330035f8ea9d8c174ad4265cd686fa43?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f2195ceb330035f8ea9d8c174ad4265cd686fa43?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f2195ceb330035f8ea9d8c174ad4265cd686fa43?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f2195ceb330035f8ea9d8c174ad4265cd686fa43?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f2195ceb330035f8ea9d8c174ad4265cd686fa43?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f2195ceb330035f8ea9d8c174ad4265cd686fa43?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f2195ceb330035f8ea9d8c174ad4265cd686fa43?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain grow shrink self-stretch my-auto aspect-[1/1] min-w-60 w-[248px]"
+            />
+          </div>
+          <div className="flex flex-wrap gap-2.5 items-center px-16 py-1 mt-8 w-full rounded-[50px] max-md:px-5 max-md:max-w-full">
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/0af00dae372f46736bdd2c2b1f37942691d2c204?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/5d7b4a66bfe1dcf92e54002473d2ef0aea925603?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 self-stretch my-auto w-8 aspect-square"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-wrap gap-6 justify-between items-center self-center mt-16 w-full max-w-[1312px] max-md:mt-10 max-md:max-w-full">
+        <div className="flex overflow-hidden flex-col self-stretch px-8 pt-14 pb-9 my-auto bg-white rounded-2xl shadow-sm min-w-60 w-[644px] max-md:px-5 max-md:max-w-full">
+          <div className="flex flex-col self-start max-md:max-w-full">
+            <div className="text-5xl font-semibold leading-none text-neutral-800 max-md:max-w-full">
+              <span className="">Get in </span>
+              <span className="text-teal-600">touch</span>{" "}
+            </div>
+            <div className="mt-5 text-sm tracking-normal leading-6 text-black max-md:max-w-full">
+              Got a favorite product we don’t make yet ?,{" "}
+              <span className="font-semibold">We’d love to hear from you!</span>
+            </div>
+          </div>
+          <div className="flex flex-col mt-8 max-md:max-w-full">
+            <div className="flex flex-col w-full max-md:max-w-full">
+              <div className="flex flex-col w-full max-md:max-w-full">
+                <div className="z-10 self-start text-sm text-teal-800">
+                  Patient name
+                </div>
+                <div className="flex flex-col justify-center items-start px-4 py-3.5 mt-2.5 w-full text-base font-medium rounded-xl border border-teal-600 border-solid bg-neutral-100 shadow-[-1px_-1px_6px_0_rgba(25,86,88,0.15),1px_1px_26px_86,88,0.15] text-neutral-800 max-md:pr-5 max-md:max-w-full">
+                  <div className="flex gap-px items-center">
+                    <div className="self-stretch my-auto text-neutral-800">
+                      Ahmed Khal
+                    </div>
+                    <div className="shrink-0 self-stretch my-auto w-0 h-6 bg-teal-800 border-2 border-teal-800 border-solid" />
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col mt-6 w-full max-md:max-w-full">
+                <div className="text-sm text-teal-800 max-md:max-w-full">
+                  Phone number
+                </div>
+                <div className="flex flex-wrap gap-2.5 items-center px-2.5 py-1.5 mt-2 w-full rounded-xl border border-solid bg-neutral-100 border-neutral-200 min-h-[52px] max-md:max-w-full">
+                  <div className="flex gap-2 items-center self-stretch my-auto">
+                    <div className="flex gap-0.5 self-stretch my-auto">
+                      <div className="flex overflow-hidden gap-2 items-center p-2 h-full rounded-lg">
+                        <div className="flex gap-1 justify-center items-center self-stretch my-auto">
+                          <div className="flex gap-1 justify-center items-center self-stretch my-auto w-6 min-h-6">
+                            <img
+                              alt=""
+                              loading="lazy"
+                              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/b2af7ba51b633ad1f24cbd6b70b775ed9bf52a6e?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                              className="object-contain self-stretch my-auto w-4 aspect-square"
+                            />
+                          </div>
+                          <img
+                            alt=""
+                            loading="lazy"
+                            src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/02e8ca856f379a967ff89ae84fa995a8d933054d?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                            className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="self-stretch my-auto text-base font-medium text-stone-300">
+                    +966
+                  </div>
+                  <div className="self-stretch my-auto text-base font-medium text-teal-800">
+                    123 456 789
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col mt-6 w-full max-md:max-w-full">
+                <div className="text-sm text-teal-800 max-md:max-w-full">
+                  Email address
+                </div>
+                <div className="flex gap-2.5 items-center px-2.5 py-4 mt-2 w-full text-base font-medium rounded-xl border border-solid bg-neutral-100 border-neutral-200 min-h-[52px] text-stone-300 max-md:max-w-full">
+                  <div className="self-stretch my-auto text-stone-300 w-[238px]">
+                    Ex: Johndoe@hotmail.com
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col mt-6 w-full max-md:max-w-full">
+                <div className="text-sm text-teal-800 max-md:max-w-full">
+                  Subject
+                </div>
+                <div className="flex gap-2.5 items-center px-2.5 py-4 mt-2 w-full text-base font-medium rounded-xl border border-solid bg-neutral-100 border-neutral-200 min-h-[52px] text-stone-300 max-md:max-w-full">
+                  <div className="self-stretch my-auto text-stone-300">
+                    Write down the title of your inquiry
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col mt-6 w-full max-md:max-w-full">
+                <div className="text-sm text-teal-800 max-md:max-w-full">
+                  Message
+                </div>
+                <div className="flex gap-2.5 items-start px-2.5 pt-3 pb-32 mt-2 w-full text-base font-medium rounded-xl border border-solid bg-neutral-100 border-neutral-200 min-h-[156px] text-stone-300 max-md:pb-24 max-md:max-w-full">
+                  <div className="text-stone-300 w-[238px]">
+                    Your message here
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex gap-2.5 justify-center items-center px-8 py-4 mt-8 text-base font-semibold text-right text-white bg-teal-800 min-h-[58px] rounded-[60px] max-md:px-5">
+            <div className="self-stretch my-auto text-white">
+              Send Us a Message
+            </div>
+          </div>
+        </div>
+        <img
+          alt=""
+          loading="lazy"
+          srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e5d5083a461b683f49c356bd764d0de7daf8f6ef?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e5d5083a461b683f49c356bd764d0de7daf8f6ef?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e5d5083a461b683f49c356bd764d0de7daf8f6ef?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e5d5083a461b683f49c356bd764d0de7daf8f6ef?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e5d5083a461b683f49c356bd764d0de7daf8f6ef?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e5d5083a461b683f49c356bd764d0de7daf8f6ef?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e5d5083a461b683f49c356bd764d0de7daf8f6ef?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/e5d5083a461b683f49c356bd764d0de7daf8f6ef?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+          className="object-contain self-stretch my-auto rounded-2xl aspect-[0.74] min-w-60 w-[644px] max-md:max-w-full"
+        />
+      </div>
+      <div className="flex overflow-hidden relative flex-col justify-center self-center px-12 py-16 mt-96 w-full rounded-3xl max-w-[1312px] min-h-[296px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
+        <img
+          alt=""
+          loading="lazy"
+          srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/374df60de81f5f00fea7cea39e69cb0fbed64c91?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/374df60de81f5f00fea7cea39e69cb0fbed64c91?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/374df60de81f5f00fea7cea39e69cb0fbed64c91?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/374df60de81f5f00fea7cea39e69cb0fbed64c91?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/374df60de81f5f00fea7cea39e69cb0fbed64c91?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/374df60de81f5f00fea7cea39e69cb0fbed64c91?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/374df60de81f5f00fea7cea39e69cb0fbed64c91?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/374df60de81f5f00fea7cea39e69cb0fbed64c91?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+          className="object-cover absolute inset-0 size-full"
+        />
+        <div className="flex relative flex-wrap gap-6 justify-between items-center">
+          <div className="flex flex-col self-stretch my-auto min-w-60 w-[652px] max-md:max-w-full">
+            <div className="text-4xl font-semibold text-emerald-50 leading-[52px] max-md:max-w-full">
+              Stay Connected with Our Health Updates
+            </div>
+            <div className="mt-4 text-xl leading-6 text-neutral-100 max-md:max-w-full">
+              Subscribe to receive trusted health information and news from our
+              medical experts.
+            </div>
+          </div>
+          <div className="flex flex-col self-stretch my-auto text-sm min-w-60 w-[540px] max-md:max-w-full">
+            <div className="flex flex-col justify-center w-full max-md:max-w-full">
+              <div className="flex flex-wrap gap-10 justify-between items-center pl-4 w-full bg-sky-100 rounded-xl border border-sky-100 border-solid min-h-16 max-md:max-w-full">
+                <div className="self-stretch my-auto text-zinc-500 w-[270px]">
+                  Type your email address
+                </div>
+                <div className="flex gap-2.5 justify-center items-center self-stretch px-6 my-auto font-semibold text-emerald-50 bg-teal-900 rounded-xl leading-[58px] min-h-16 max-md:px-5">
+                  <div className="self-stretch my-auto">Subscribe Now</div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-3 leading-6 text-neutral-200 max-md:max-w-full">
+              We respect your privacy. No spam, unsubscribe anytime.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-col mt-24 w-full bg-teal-950 max-md:mt-10 max-md:max-w-full">
+        <div className="flex flex-wrap gap-10 justify-between items-center px-16 py-3.5 w-full border-b border-solid border-b-teal-800 max-md:px-5 max-md:max-w-full">
+          <img
+            alt=""
+            loading="lazy"
+            srcSet="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f1ee0dd0a3987d0ed30ac4c5bb86172d2df4c1d6?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=100 100w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f1ee0dd0a3987d0ed30ac4c5bb86172d2df4c1d6?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=200 200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f1ee0dd0a3987d0ed30ac4c5bb86172d2df4c1d6?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=400 400w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f1ee0dd0a3987d0ed30ac4c5bb86172d2df4c1d6?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=800 800w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f1ee0dd0a3987d0ed30ac4c5bb86172d2df4c1d6?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1200 1200w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f1ee0dd0a3987d0ed30ac4c5bb86172d2df4c1d6?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=1600 1600w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f1ee0dd0a3987d0ed30ac4c5bb86172d2df4c1d6?apiKey=e969867fc0a145258ec2d2dcaf1c3295&width=2000 2000w, https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f1ee0dd0a3987d0ed30ac4c5bb86172d2df4c1d6?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+            className="object-contain shrink-0 self-stretch my-auto aspect-[2.48] w-[109px]"
+          />
+          <div className="flex gap-8 items-center self-stretch my-auto text-sm text-white min-w-60 max-md:max-w-full">
+            <div className="flex gap-2 items-center self-stretch my-auto leading-none min-w-60">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/4083b3ae8412915d9b7097be67ceeb4fb51459d7?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+              />
+              <div className="flex gap-1 items-center self-stretch my-auto min-w-60">
+                <div className="self-stretch my-auto text-white">
+                  6481 Al Sahaba Rd, Al Munsiyah, Riyadh 13253, KSA
+                </div>
+              </div>
+            </div>
+            <div className="flex gap-2 items-center self-stretch my-auto font-medium leading-loose whitespace-nowrap">
+              <img
+                alt=""
+                loading="lazy"
+                src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/967dbc98efea5f58581cccd43aaad74e70a2de13?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+              />
+              <div className="flex flex-col justify-center self-stretch my-auto">
+                <div className="text-white">24/7</div>
+              </div>
+            </div>
+          </div>
+          <div className="flex gap-2.5 items-start self-stretch my-auto">
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/87f050268f5a99ef7111ab59264cf9ac04969ffd?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 w-6 aspect-square"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/6177d3ad9d8f6ecd2a7cd7d47cf35a02818c024f?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 w-6 aspect-square"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/120d5e0febca14fdc8af26449ff91bbd96fd1494?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 w-6 aspect-square"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/99f7ece8e9aea135b78763ffc788c7558e63bd89?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 w-6 aspect-square"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/904d67e5fb321eb7a7009f4cb49acf14817a2d41?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 w-6 aspect-square"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/eb17b37be293964258e9c3cca4271176891f90c5?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 w-6 aspect-square"
+            />
+            <img
+              alt=""
+              loading="lazy"
+              src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/f639499b4584281feedf5174341b6e0f0ced9b23?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+              className="object-contain shrink-0 w-6 aspect-square"
+            />
+          </div>
+        </div>
+        <div className="flex flex-wrap gap-10 justify-between items-start px-16 py-4 w-full max-md:px-5 max-md:max-w-full">
+          <div className="flex flex-col min-w-60 w-[400px]">
+            <div className="flex flex-col justify-center items-start py-px max-w-full text-sm font-bold leading-loose text-white w-[200px]">
+              <div className="z-10 mr-0">
+                About Atlas International Medical Complex
+              </div>
+            </div>
+            <div className="flex flex-col mt-2 max-w-full text-xs font-medium leading-5 text-slate-400 w-[400px]">
+              <div>
+                Atlas International Complex offers a comprehensive range of
+                medical and therapeutic services and is one of the most
+                prominent advanced medical complexes in the region. We strive to
+                provide high-quality medical services in various specialties
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-10 items-center min-w-60 max-md:max-w-full">
+            <div className="flex flex-col self-stretch my-auto w-[67px]">
+              <div className="flex flex-col justify-center items-start py-px w-full text-sm font-bold leading-loose text-white whitespace-nowrap max-md:pr-5">
+                <div className="z-10">Pages</div>
+              </div>
+              <div className="flex flex-col mt-2 text-xs leading-6 text-slate-400">
+                <div>Home</div>
+                <div>About Us</div>
+                <div>Services</div>
+                <div>Doctors</div>
+                <div>Blogs</div>
+                <div>Contact Us</div>
+              </div>
+            </div>
+            <div className="flex flex-col self-stretch my-auto min-w-60">
+              <div className="text-sm font-bold leading-loose text-white">
+                Departments
+              </div>
+              <div className="flex gap-10 items-start mt-2 text-xs leading-6 text-slate-400">
+                <div className="flex flex-col">
+                  <div>ENT Clinic</div>
+                  <div>Eye Clinic</div>
+                  <div>Dental Clinic</div>
+                  <div>Chest Clinic</div>
+                  <div>Orthopedic Clinic</div>
+                  <div>Physiotherapy Clinic</div>
+                </div>
+                <div className="flex flex-col">
+                  <div>Dermatology & Cosmetic Clinic</div>
+                  <div>Gynecology Medicine Clinic</div>
+                  <div>General Surgery Clinic</div>
+                  <div>Internal Medicine Clinic</div>
+                  <div>Genetic Medicine Clinic</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col w-[142px]">
+            <div className="flex flex-col justify-center items-start py-px w-full text-sm font-bold leading-loose text-white max-md:pr-5">
+              <div className="z-10">Contact Us</div>
+            </div>
+            <div className="flex flex-col mt-4 text-xs text-neutral-300">
+              <div className="flex flex-col">
+                <div className="flex gap-2 items-center self-start">
+                  <img
+                    alt=""
+                    loading="lazy"
+                    src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/6bf6af59454299644a3c7a00de53545954d06374?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                    className="object-contain shrink-0 self-stretch my-auto w-5 aspect-square"
+                  />
+                  <div className="flex flex-col self-stretch my-auto">
+                    <div className="text-neutral-300">+966 54 111 3618</div>
+                  </div>
+                </div>
+                <div className="flex gap-2 items-center mt-4 leading-6 whitespace-nowrap">
+                  <img
+                    alt=""
+                    loading="lazy"
+                    src="https://api.builder.io/api/v1/image/assets/e969867fc0a145258ec2d2dcaf1c3295/acdbc08efbad4e31aa3248b4f54f575b0dda5c55?apiKey=e969867fc0a145258ec2d2dcaf1c3295&"
+                    className="object-contain shrink-0 self-stretch my-auto w-5 aspect-square"
+                  />
+                  <div className="self-stretch my-auto text-neutral-300 w-[114px]">
+                    Info@qms.com.sa
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-end py-4 w-full text-sm leading-none border-t border-solid border-t-slate-600 text-slate-400 max-md:max-w-full">
+          <div className="flex flex-wrap flex-1 shrink gap-10 justify-between items-center px-16 w-full basis-0 min-w-60 max-md:px-5 max-md:max-w-full">
+            <div className="self-stretch my-auto">
+              © 2024 Atlas International Medical Complex. All rights reserved.
+            </div>
+            <div className="flex gap-5 items-center self-stretch my-auto min-w-60">
+              <div className="self-stretch my-auto">Privacy Policy</div>
+              <div className="self-stretch my-auto">Terms of Service</div>
+              <div className="self-stretch my-auto">Cookie Policy</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
