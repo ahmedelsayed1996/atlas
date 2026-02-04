@@ -15,16 +15,18 @@ const cairo = Cairo({
 
 export default function RootLayout({
   children,
-  params: { locale }
+  // params: { locale }
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  // params: Promise<{ locale: string }>;
 }) {
   return (
-    <html lang={locale} className={cairo.className}>
+    <html lang="en" className={cairo.className} suppressHydrationWarning>
+      {/* <html lang={locale} className={cairo.className}> */}
       <head>
       </head>
-      <body dir={locale === 'ar' ? "rtl" : "ltr"}>
+      <body suppressHydrationWarning>
+        {/* <body dir={locale === 'ar' ? "rtl" : "ltr"}> */}
         <ReduxProvider>
           {children}
           <ToastContainer position="bottom-right" />

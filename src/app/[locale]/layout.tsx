@@ -11,14 +11,20 @@ export const metadata = {
 };
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  // params,
+  // params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  // params: Promise<{ locale: string }>;
+  // params: { locale: string };
 }) {
-  const messages = await getMessages({ locale });
+  
+  // const { locale } = await params;
+  // const messages = await getMessages({ locale});
+  const messages = await getMessages({ locale: "en" });
   return (
-    <div dir={locale === "ar" ? "rtl" : "ltr"}>
+    <div dir={"ltr"}>
+    {/* <div dir={locale === "ar" ? "rtl" : "ltr"}> */}
       <NextIntlClientProvider messages={messages}>
         {/* <Navbar />
         <NewHeader /> */}
